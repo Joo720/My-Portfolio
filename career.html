@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jothilakshmi M | Software Engineer & Backend Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        primaryHover: '#1d4ed8',
+                        darkNavy: '#0f172a',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .mono-font { font-family: 'JetBrains Mono', monospace; }
+        
+        /* Print Styles: Transforms page into clean printable resume */
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white !important; color: black !important; font-size: 11pt; }
+            .print-card { border: 1px solid #e2e8f0 !important; box-shadow: none !important; break-inside: avoid; }
+            a { text-decoration: none !important; color: black !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR & PORTFOLIO SWITCHER -->
+    <div class="no-print bg-slate-900 border-b border-slate-800 py-2.5 px-4 text-xs sm:text-sm text-center flex flex-wrap justify-center items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 font-semibold border border-blue-500/20">
+            <i class="fa-solid fa-code"></i> Engineering & Job Portfolio
+        </span>
+        <span class="text-slate-500 hidden sm:inline">•</span>
+        <span class="text-slate-300">Looking for contract work, small projects, or freelance services?</span>
+        <a href="index.html" class="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 font-bold underline underline-offset-4 transition">
+            <i class="fa-solid fa-bolt"></i> Switch to Freelance Client Portfolio &rarr;
+        </a>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <nav class="no-print sticky top-0 z-50 backdrop-blur-md bg-white/90 border-b border-slate-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#about" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center font-bold text-white shadow-md shadow-blue-500/20 group-hover:bg-blue-700 transition">
+                    JM
+                </div>
+                <div>
+                    <span class="text-lg font-bold text-slate-900 tracking-tight group-hover:text-blue-600 transition">Jothilakshmi M.</span>
+                    <span class="block text-xs text-slate-500 font-medium">Software Engineer • Java & Laravel</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
+                <a href="#skills" class="hover:text-blue-600 transition">Competencies</a>
+                <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+                <a href="#projects" class="hover:text-blue-600 transition">System Projects</a>
+                <a href="#education" class="hover:text-blue-600 transition">Education</a>
+            </div>
+
+            <!-- Resume Download & Actions -->
+            <div class="flex items-center gap-3">
+                <button onclick="window.print()" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs sm:text-sm border border-slate-300 transition">
+                    <i class="fa-solid fa-print"></i>
+                    <span>Print / PDF</span>
+                </button>
+                <a href="mailto:jomurugan2004@gmail.com" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs sm:text-sm shadow-md shadow-blue-600/20 transition">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Contact Me</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER / HERO SUMMARY -->
+    <header id="about" class="pt-12 pb-16 bg-white border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+                <div class="space-y-4 max-w-3xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold border border-blue-200">
+                        <span class="w-2 h-2 rounded-full bg-blue-600"></span> 3 Years Commercial Backend Experience
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+                        Jothilakshmi M.
+                    </h1>
+                    <p class="text-lg sm:text-xl font-medium text-blue-600">
+                        Software Engineer | Java Backend Developer | Laravel Developer
+                    </p>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Commercial backend engineer with deep foundational expertise in Object-Oriented Programming (OOP), relational database schemas, REST API engineering, and enterprise workflows. Adept at cross-functional delivery within Agile frameworks, query performance tuning, and building clean, modular architecture with zero downtime.
+                    </p>
+
+                    <!-- Contact Details Strip -->
+                    <div class="flex flex-wrap items-center gap-4 pt-2 text-xs sm:text-sm text-slate-600">
+                        <a href="mailto:jomurugan2004@gmail.com" class="flex items-center gap-2 hover:text-blue-600 transition">
+                            <i class="fa-solid fa-envelope text-blue-600"></i>
+                            <span>jomurugan2004@gmail.com</span>
+                        </a>
+                        <span class="text-slate-300 hidden sm:inline">|</span>
+                        <a href="tel:+919384139425" class="flex items-center gap-2 hover:text-blue-600 transition">
+                            <i class="fa-solid fa-phone text-blue-600"></i>
+                            <span>+91 9384139425</span>
+                        </a>
+                        <span class="text-slate-300 hidden sm:inline">|</span>
+                        <span class="flex items-center gap-2 text-slate-600">
+                            <i class="fa-solid fa-location-dot text-blue-600"></i>
+                            <span>Chennai / Tamil Nadu, India</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Fast Facts / Metrics Card -->
+                <div class="w-full md:w-auto p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm space-y-4 shrink-0">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs uppercase tracking-wider text-slate-400 font-bold">Highest Degree</span>
+                            <span class="font-bold text-slate-800 text-sm">Master of Computer Applications</span>
+                            <span class="block text-xs text-blue-600 font-semibold">Score: 86.9%</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-slate-200 pt-3">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs uppercase tracking-wider text-slate-400 font-bold">Core Stack</span>
+                            <span class="font-bold text-slate-800 text-sm">Java • PHP • Laravel • MySQL</span>
+                            <span class="block text-xs text-slate-500 font-medium">REST APIs & OOPs Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CORE TECHNICAL COMPETENCIES -->
+    <section id="skills" class="py-16 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-10">
+                <span class="text-xs uppercase tracking-widest text-blue-600 font-bold">Technical Matrix</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Skills & Architectural Competencies</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Category 1: Languages & Backend Core -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm print-card">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base">Backend & Languages</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                                <span>Core Java (Servlets, JDBC)</span>
+                                <span class="text-blue-600">Proficient</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                                <div class="bg-blue-600 h-2 rounded-full w-[88%]"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                                <span>PHP & Laravel (MVC Architecture)</span>
+                                <span class="text-blue-600">Advanced</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                                <div class="bg-blue-600 h-2 rounded-full w-[94%]"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                                <span>Object-Oriented Programming (OOP)</span>
+                                <span class="text-blue-600">Mastery</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                                <div class="bg-blue-600 h-2 rounded-full w-[95%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2: Databases & Storage -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm print-card">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base">Databases & Optimization</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                                <span>MySQL & Relational Modeling</span>
+                                <span class="text-emerald-600">Advanced</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                                <div class="bg-emerald-600 h-2 rounded-full w-[90%]"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                                <span>Query Indexing & Latency Tuning</span>
+                                <span class="text-emerald-600">Proficient</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                                <div class="bg-emerald-600 h-2 rounded-full w-[85%]"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                                <span>Eloquent ORM & Migrations</span>
+                                <span class="text-emerald-600">Advanced</span>
+                            </div>
+                            <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                                <div class="bg-emerald-600 h-2 rounded-full w-[92%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 3: APIs & Integrations -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm print-card">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-plug"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base">APIs & Integrations</h3>
+                    </div>
+                    <ul class="text-xs space-y-2.5 text-slate-700">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-600"></i> RESTful API Design & Token Authentication</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-600"></i> Payment Gateways (Stripe, Razorpay, Webhooks)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-600"></i> Mobile In-App Purchases (iOS StoreKit & Android)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-600"></i> Postman Documentation & Automated Testing</li>
+                    </ul>
+                </div>
+
+                <!-- Category 4: Web Technologies -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm print-card">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base">Web & Frontend</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-semibold text-slate-700">HTML5</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-semibold text-slate-700">CSS3</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-semibold text-slate-700">JavaScript</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-semibold text-slate-700">Blade Templates</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-semibold text-slate-700">Bootstrap / Tailwind</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-semibold text-slate-700">JSON & AJAX</span>
+                    </div>
+                </div>
+
+                <!-- Category 5: Security & Blockchain -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm print-card">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-rose-50 text-rose-600 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base">Security & Provenance</h3>
+                    </div>
+                    <ul class="text-xs space-y-2.5 text-slate-700">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-rose-600"></i> Multichain Private Blockchain</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-rose-600"></i> C2PA Cryptographic Content Authenticity</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-rose-600"></i> Role-Based Access Control (RBAC)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-rose-600"></i> High-Volume Automated PDF Engines</li>
+                    </ul>
+                </div>
+
+                <!-- Category 6: Engineering Practices -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm print-card">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-toolbox"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base">Tools & Methodologies</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-semibold text-slate-700">Git / Version Control</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-semibold text-slate-700">Agile / Scrum Delivery</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-semibold text-slate-700">Peer Code Reviews</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-semibold text-slate-700">Postman Collections</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-semibold text-slate-700">Zapier Automation</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 font-semibold text-slate-700">Composer Packages</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE TIMELINE -->
+    <section id="experience" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <span class="text-xs uppercase tracking-widest text-blue-600 font-bold">Career Progression</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Commercial Work Experience</h2>
+            </div>
+
+            <div class="relative border-l-2 border-slate-200 pl-6 sm:pl-8 ml-3 space-y-12">
+                <!-- Role 1 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-blue-600 ring-4 ring-blue-100"></div>
+                    <div class="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm print-card">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                            <div>
+                                <h3 class="text-lg sm:text-xl font-bold text-slate-900">Junior Software Developer / Backend Developer</h3>
+                                <span class="text-sm font-semibold text-blue-600">Zaigo Infotech, Chennai</span>
+                            </div>
+                            <span class="inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold w-fit">
+                                May 2024 – Present
+                            </span>
+                        </div>
+                        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed list-disc list-inside">
+                            <li>Designed, developed, and maintained secure RESTful APIs and backend processing modules using <strong>Core Java and PHP</strong>, ensuring optimal system response times and zero downtime.</li>
+                            <li>Applied rigorous <strong>Object-Oriented Programming (OOP)</strong> design principles to architect reusable service layers and clean, modular codebases.</li>
+                            <li>Collaborated closely with cross-functional product, frontend, mobile, and QA teams within fast-paced <strong>Agile/Scrum</strong> sprints to deliver feature updates seamlessly.</li>
+                            <li>Optimized complex <strong>MySQL relational queries</strong>, designed database indexing strategies, and managed migration pipelines to significantly reduce data retrieval latency.</li>
+                            <li>Engineered end-to-end third-party integrations including payment gateways and in-app purchase validation pipelines for mobile clients (Android & iOS).</li>
+                            <li>Implemented tamper-proof asset generation pipelines integrating <strong>Multichain</strong> and <strong>C2PA</strong> content verification protocols for cryptographic data security.</li>
+                            <li>Conducted comprehensive code reviews, performed rigorous debugging, and maintained technical deployment documentation.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-slate-400 ring-4 ring-slate-100"></div>
+                    <div class="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm print-card">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                            <div>
+                                <h3 class="text-lg sm:text-xl font-bold text-slate-900">Junior PHP Laravel Developer</h3>
+                                <span class="text-sm font-semibold text-slate-700">Renga Technology, Virudhunagar</span>
+                            </div>
+                            <span class="inline-flex items-center px-3 py-1 rounded-full bg-slate-200 text-slate-700 text-xs font-bold w-fit">
+                                Jun 2023 – May 2024
+                            </span>
+                        </div>
+                        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed list-disc list-inside">
+                            <li>Developed scalable server-side web applications using <strong>PHP and Laravel</strong>, managing core business logic and relational database operations.</li>
+                            <li>Built efficient backend admin interfaces to streamline enterprise operations, multi-vendor product catalogs, and administrative workflows.</li>
+                            <li>Constructed transactional database schemas and inventory tracking mechanisms for high-traffic fireworks e-commerce sites.</li>
+                            <li>Participated actively in team code reviews, bug fixes, and version control workflows using Git.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAILED SYSTEM ARCHITECTURE PROJECTS -->
+    <section id="projects" class="py-16 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-10">
+                <span class="text-xs uppercase tracking-widest text-blue-600 font-bold">Engineering Portfolio</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Featured Systems & Technical Implementations</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm print-card flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wide">Enterprise Healthcare Engine</span>
+                            <span class="text-xs font-medium text-slate-400">Zaigo Infotech</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Neurovanna — Medical Order Processing Platform</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                            Developed a secure enterprise backend platform for processing medical breath test orders and automating high-volume PDF lab report generation. Designed scalable relational database schemas and optimized REST API endpoints to handle sensitive medical data securely.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs">
+                        <span class="px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 font-medium">Core Java</span>
+                        <span class="px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 font-medium">JDBC</span>
+                        <span class="px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 font-medium">Servlets</span>
+                        <span class="px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 font-medium">MySQL</span>
+                        <span class="px-2.5 py-1 rounded-md bg-blue-50 text-blue-700 font-medium">REST APIs</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm print-card flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-rose-600 uppercase tracking-wide">Blockchain & Digital Provenance</span>
+                            <span class="text-xs font-medium text-slate-400">Zaigo Infotech</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Authenticator Blockchain & Content Verification</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                            Implemented immutable asset creation and cryptographic certificate generation pipelines using Multichain technology. Integrated C2PA content verification specifications to guarantee tamper-proof document validation and cryptographic data integrity.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs">
+                        <span class="px-2.5 py-1 rounded-md bg-rose-50 text-rose-700 font-medium">PHP</span>
+                        <span class="px-2.5 py-1 rounded-md bg-rose-50 text-rose-700 font-medium">Multichain</span>
+                        <span class="px-2.5 py-1 rounded-md bg-rose-50 text-rose-700 font-medium">C2PA</span>
+                        <span class="px-2.5 py-1 rounded-md bg-rose-50 text-rose-700 font-medium">Security</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm print-card flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-purple-600 uppercase tracking-wide">Mobile Backend & IAP</span>
+                            <span class="text-xs font-medium text-slate-400">Zaigo Infotech</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Church App (Reflection Rosary 365)</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                            Engineered robust backend REST APIs for a cross-platform meditative mobile application. Supported user progress synchronization, scheduled daily content delivery, and server-side in-app subscription validation across iOS and Android environments.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs">
+                        <span class="px-2.5 py-1 rounded-md bg-purple-50 text-purple-700 font-medium">PHP</span>
+                        <span class="px-2.5 py-1 rounded-md bg-purple-50 text-purple-700 font-medium">Laravel</span>
+                        <span class="px-2.5 py-1 rounded-md bg-purple-50 text-purple-700 font-medium">Mobile APIs</span>
+                        <span class="px-2.5 py-1 rounded-md bg-purple-50 text-purple-700 font-medium">In-App Purchases</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm print-card flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-emerald-600 uppercase tracking-wide">Modular Package Architecture</span>
+                            <span class="text-xs font-medium text-slate-400">Zaigo Infotech</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Lara-docs — Custom Reusable Laravel Package</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                            Architected and published an internal modular Laravel package designed to standardize and streamline document storage, upload security, and metadata management across multiple enterprise client applications.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs">
+                        <span class="px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 font-medium">PHP</span>
+                        <span class="px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 font-medium">Package Development</span>
+                        <span class="px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 font-medium">Composer</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm print-card flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-amber-600 uppercase tracking-wide">E-Commerce & High Traffic</span>
+                            <span class="text-xs font-medium text-slate-400">Renga Technology</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Ganapathy & Sahana Crackers Fireworks Portals</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                            Built complete backend logic and database layers for high-volume fireworks e-commerce websites. Streamlined customer order processing workflows, dynamic festive discount matrices, inventory catalogs, and administrative dashboards.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs">
+                        <span class="px-2.5 py-1 rounded-md bg-amber-50 text-amber-700 font-medium">PHP</span>
+                        <span class="px-2.5 py-1 rounded-md bg-amber-50 text-amber-700 font-medium">Laravel</span>
+                        <span class="px-2.5 py-1 rounded-md bg-amber-50 text-amber-700 font-medium">MySQL</span>
+                        <span class="px-2.5 py-1 rounded-md bg-amber-50 text-amber-700 font-medium">Orders System</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm print-card flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-slate-600 uppercase tracking-wide">Academic Capstone</span>
+                            <span class="text-xs font-medium text-slate-400">V.H.N.S.N College</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Online Student Mentoring & Records System</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                            Role-based portal for managing student academic profiles. Enabled administrative leadership to securely search and retrieve academic records by Roll Number, streamlining historical record management.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2 text-xs">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-medium">PHP</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-medium">Laravel</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 font-medium">MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-10">
+                <span class="text-xs uppercase tracking-widest text-blue-600 font-bold">Academic Background</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Education & Qualifications</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- MCA -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 print-card flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-blue-600 uppercase">May 2021 – Apr 2023</span>
+                        <h3 class="text-lg font-bold text-slate-900">Master of Computer Applications (MCA)</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 font-medium">V.H.N.S.N College</p>
+                        <div class="mt-2 inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold border border-emerald-200">
+                            Academic Score: 86.9%
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BCA -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 print-card flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-slate-200 text-slate-700 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-slate-500 uppercase">May 2018 – Apr 2021</span>
+                        <h3 class="text-lg font-bold text-slate-900">Bachelor of Computer Applications (BCA)</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 font-medium">V.H.N.S.N College</p>
+                        <div class="mt-2 inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-700 text-xs font-bold border border-blue-200">
+                            Academic Score: 82.7%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 bg-slate-900 text-white text-center text-xs no-print">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
+            <p>© 2026 Jothilakshmi M. • Software Engineer Portfolio</p>
+            <p class="text-slate-400">
+                Built with Clean Architecture & Modern Web Standards • 
+                <a href="index.html" class="text-blue-400 hover:underline">Switch to Freelance Services Portfolio</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

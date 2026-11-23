@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jothilakshmi M | Freelance Laravel & Backend Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        primaryHover: '#4f46e5',
+                        darkBg: '#0b0f19',
+                        darkCard: '#111827',
+                        darkBorder: '#1f2937',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #38bdf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-[#0b0f19] text-slate-200 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR & PORTFOLIO SWITCHER -->
+    <div class="bg-gradient-to-r from-indigo-900/60 via-purple-900/60 to-slate-900 border-b border-indigo-500/20 py-2.5 px-4 text-xs sm:text-sm text-center flex flex-wrap justify-center items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 font-medium border border-emerald-500/20">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            Available for New Projects
+        </span>
+        <span class="text-slate-400 hidden sm:inline">•</span>
+        <span class="text-slate-300">Are you a tech recruiter or hiring manager?</span>
+        <a href="career.html" class="inline-flex items-center gap-1.5 text-indigo-400 hover:text-indigo-300 font-semibold underline underline-offset-4 transition">
+            <i class="fa-solid fa-briefcase"></i> Switch to Software Engineer / Job Portfolio &rarr;
+        </a>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f19]/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#hero" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition">
+                    JM
+                </div>
+                <div>
+                    <span class="text-lg font-bold text-white tracking-tight group-hover:text-indigo-400 transition">Jothilakshmi M.</span>
+                    <span class="block text-xs text-slate-400 font-medium">Laravel & Backend Specialist</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#services" class="hover:text-indigo-400 transition">Services</a>
+                <a href="#work" class="hover:text-indigo-400 transition">Client Work</a>
+                <a href="#calculator" class="hover:text-indigo-400 transition">Quote Estimator</a>
+                <a href="#process" class="hover:text-indigo-400 transition">How I Work</a>
+                <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+            </div>
+
+            <!-- CTAs -->
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/919384139425?text=Hi%20Jothilakshmi,%20I%20am%20interested%20in%20discussing%20a%20freelance%20project%20with%20you." target="_blank" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20 transition font-medium text-sm">
+                    <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+                    <span>WhatsApp Me</span>
+                </a>
+                <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm shadow-lg shadow-indigo-600/30 hover:shadow-indigo-600/50 transition">
+                    <span>Hire Me</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative pt-12 pb-20 md:py-28 overflow-hidden">
+        <!-- Background Ambient Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-indigo-600/15 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/80 text-xs font-semibold text-indigo-300 mb-6 shadow-sm">
+                    <i class="fa-solid fa-bolt text-yellow-400"></i> Fast Turnaround & Clean Architecture
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-6">
+                    I build fast <span class="gradient-text">Laravel web apps,</span> custom admin dashboards & high-speed APIs.
+                </h1>
+                <p class="text-base sm:text-lg text-slate-300 leading-relaxed mb-8">
+                    Need a secure payment gateway integrated, a role-based admin panel, or clean REST APIs for your mobile app? With 3+ years of commercial backend experience, I deliver reliable, battle-tested solutions on time and without excuses.
+                </p>
+
+                <!-- Quick Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-base shadow-xl shadow-indigo-600/25 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Start a Project</span>
+                    </a>
+                    <a href="https://wa.me/919384139425?text=Hi%20Jothilakshmi,%20I%20have%20a%20small%20project%20and%20would%20like%20a%20quick%20quote." target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-semibold text-base transition flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+                        <span>Direct WhatsApp Chat</span>
+                    </a>
+                </div>
+
+                <!-- Trust Stats Strip -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-sm shadow-xl">
+                    <div class="text-center p-3">
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white mb-1">3+ Years</div>
+                        <div class="text-xs text-slate-400 font-medium">Commercial Experience</div>
+                    </div>
+                    <div class="text-center p-3 border-l border-slate-800">
+                        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 mb-1">99.9%</div>
+                        <div class="text-xs text-slate-400 font-medium">Zero-Downtime Record</div>
+                    </div>
+                    <div class="text-center p-3 border-l border-slate-800">
+                        <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400 mb-1">24-48 hrs</div>
+                        <div class="text-xs text-slate-400 font-medium">Starter Task Turnaround</div>
+                    </div>
+                    <div class="text-center p-3 border-l border-slate-800">
+                        <div class="text-2xl sm:text-3xl font-extrabold text-purple-400 mb-1">100%</div>
+                        <div class="text-xs text-slate-400 font-medium">Transparent Communication</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FREELANCE SERVICES (MINIMAL / STARTER PACKAGES) -->
+    <section id="services" class="py-20 bg-slate-950/70 border-t border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-indigo-400 font-bold">Services & Solutions</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-4">Focused Backend Services That Solve Real Problems</h2>
+                <p class="text-slate-400 text-sm sm:text-base">No bloated packages or vague buzzwords. Choose the exact capability you need for your web application.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 hover:bg-slate-900/90 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-300 transition">Payment Gateway & Subscriptions</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Flawless integration of Stripe, Razorpay, PayPal, or mobile in-app purchase verification (iOS & Android). Includes webhook listeners and automated transaction receipt generation.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Zero-failure webhook callbacks</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Recurring subscription renewals</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Instant PDF invoice generation</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-indigo-400 hover:text-indigo-300 inline-flex items-center gap-1.5">
+                        Request Payment Integration &rarr;
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-purple-500/50 hover:bg-slate-900/90 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 border border-purple-500/20 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-300 transition">Custom Admin Dashboards & CRUD</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Custom role-based management portals built in Laravel. Manage products, orders, customers, and analytics without clunky spreadsheets.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Role-based permissions (Admin, Staff, Client)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Export to Excel, CSV & PDF</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Order fulfillment & inventory controls</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-purple-400 hover:text-purple-300 inline-flex items-center gap-1.5">
+                        Build an Admin Panel &rarr;
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-emerald-500/50 hover:bg-slate-900/90 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-300 transition">High-Speed RESTful APIs</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Secure, sub-second backend endpoints designed specifically for Flutter, React Native, or frontend web frameworks with Sanctum/JWT authentication.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Clean Postman API documentation</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Rate limiting & security headers</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Third-party API integrations (Zapier, SMS)</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-emerald-400 hover:text-emerald-300 inline-flex items-center gap-1.5">
+                        Develop Mobile/Web APIs &rarr;
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-500/50 hover:bg-slate-900/90 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-amber-300 transition">Database Optimization & Tuning</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Eliminating slow page loads caused by bottlenecked MySQL queries, missing indexes, or poor schema structures.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Slow query analysis & indexing</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Database migrations & normalization</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Caching with Redis / Memcached</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-1.5">
+                        Speed Up My Database &rarr;
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-blue-500/50 hover:bg-slate-900/90 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-blue-500/10 text-blue-400 border border-blue-500/20 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-file-pdf"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition">Automated PDF & Workflow Systems</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            High-volume automated PDF document generation, certificates, invoices, and background email distribution pipelines.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Bulk lab reports & invoices</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Automated email attachments</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Tamper-evident digital signatures</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-blue-400 hover:text-blue-300 inline-flex items-center gap-1.5">
+                        Automate Reports &rarr;
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-rose-500/50 hover:bg-slate-900/90 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-rose-500/10 text-rose-400 border border-rose-500/20 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-bug-slash"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-rose-300 transition">Rapid Bug Fixing & Upgrades</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Got a broken Laravel or PHP script? I diagnose stack traces, resolve fatal errors, fix broken sessions, and perform PHP version upgrades.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> 24-48 hour rapid emergency turnarounds</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> PHP 8.x compatibility fixes</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Security patch application</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="text-xs font-bold text-rose-400 hover:text-rose-300 inline-flex items-center gap-1.5">
+                        Fix an Urgent Bug &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENT WORK & CASE STUDIES -->
+    <section id="work" class="py-20 bg-[#0b0f19] border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold">Proven Track Record</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-4">Real Projects & Measurable Results</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Take a look at how I transformed operational roadblocks into reliable digital products.</p>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Case Study 1 -->
+                <div class="p-8 lg:p-10 rounded-3xl bg-slate-900 border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center shadow-xl">
+                    <div class="lg:col-span-7 space-y-4">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 text-orange-400 text-xs font-semibold border border-orange-500/20">
+                            <i class="fa-solid fa-fire"></i> E-Commerce & Festive High Traffic
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-white">Ganapathy & Sahana Fireworks E-Commerce Engine</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Built the complete backend order management system and inventory database for high-volume festive e-commerce platforms. Handled thousands of burst orders, real-time stock deductions, and customer invoice calculations during peak Diwali sales without a glitch.
+                        </p>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+                            <div class="p-3 rounded-xl bg-slate-950/60 border border-slate-800">
+                                <span class="block text-lg font-bold text-white">100%</span>
+                                <span class="text-xs text-slate-400">Zero Crash Rate</span>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-950/60 border border-slate-800">
+                                <span class="block text-lg font-bold text-emerald-400">Multi-Vendor</span>
+                                <span class="text-xs text-slate-400">Inventory Sync</span>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-950/60 border border-slate-800 col-span-2 sm:col-span-1">
+                                <span class="block text-lg font-bold text-indigo-400">Automated</span>
+                                <span class="text-xs text-slate-400">PDF Invoices</span>
+                            </div>
+                        </div>
+                        <div class="pt-2 flex flex-wrap gap-2 text-xs">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">PHP</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">Laravel</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">MySQL Indexing</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">Admin Orders Portal</span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 bg-gradient-to-br from-indigo-950/40 to-slate-950 p-6 rounded-2xl border border-slate-800/80">
+                        <h4 class="text-xs uppercase font-bold text-slate-400 tracking-wider mb-4">Project Highlights</h4>
+                        <ul class="space-y-3 text-xs text-slate-300">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+                                <span>High-concurrency cart checkout preventing duplicate stock deduction.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+                                <span>Dynamic bundle discounts and tiered festival price calculators.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+                                <span>One-click bulk courier dispatch export for administrative warehouse staff.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="p-8 lg:p-10 rounded-3xl bg-slate-900 border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center shadow-xl">
+                    <div class="lg:col-span-7 space-y-4">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-semibold border border-blue-500/20">
+                            <i class="fa-solid fa-mobile-screen"></i> Mobile Backend & In-App Purchases
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-white">Church App (Reflection Rosary 365)</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Engineered resilient, low-latency REST APIs for a meditation and daily spiritual content mobile app used across Android and iOS. Built end-to-end receipt verification for in-app subscriptions, daily progress synchronization, and push content distribution.
+                        </p>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+                            <div class="p-3 rounded-xl bg-slate-950/60 border border-slate-800">
+                                <span class="block text-lg font-bold text-emerald-400">iOS & Android</span>
+                                <span class="text-xs text-slate-400">IAP Subscriptions</span>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-950/60 border border-slate-800">
+                                <span class="block text-lg font-bold text-white">&lt;200ms</span>
+                                <span class="text-xs text-slate-400">API Response Speed</span>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-950/60 border border-slate-800 col-span-2 sm:col-span-1">
+                                <span class="block text-lg font-bold text-purple-400">Daily Sync</span>
+                                <span class="text-xs text-slate-400">User Progress Tracking</span>
+                            </div>
+                        </div>
+                        <div class="pt-2 flex flex-wrap gap-2 text-xs">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">Laravel APIs</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">In-App Purchases</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">Token Auth</span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 bg-gradient-to-br from-indigo-950/40 to-slate-950 p-6 rounded-2xl border border-slate-800/80">
+                        <h4 class="text-xs uppercase font-bold text-slate-400 tracking-wider mb-4">Project Highlights</h4>
+                        <ul class="space-y-3 text-xs text-slate-300">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+                                <span>Cryptographic server-side validation of Google Play & Apple Store receipts.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+                                <span>Automated daily scheduled content rotation via Laravel Cron schedulers.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="p-8 lg:p-10 rounded-3xl bg-slate-900 border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center shadow-xl">
+                    <div class="lg:col-span-7 space-y-4">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold border border-emerald-500/20">
+                            <i class="fa-solid fa-file-waveform"></i> Enterprise Automation & PDF Pipelines
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-white">Neurovanna — Medical Lab Automation System</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Developed a secure healthcare backend platform handling breath test order queues and automating high-volume lab test PDF generation. Completely eliminated human clerical error and reduced patient report delivery from hours to seconds.
+                        </p>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+                            <div class="p-3 rounded-xl bg-slate-950/60 border border-slate-800">
+                                <span class="block text-lg font-bold text-white">0s Delay</span>
+                                <span class="text-xs text-slate-400">Automated Dispatch</span>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-950/60 border border-slate-800">
+                                <span class="block text-lg font-bold text-emerald-400">100%</span>
+                                <span class="text-xs text-slate-400">Paperless Workflow</span>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-950/60 border border-slate-800 col-span-2 sm:col-span-1">
+                                <span class="block text-lg font-bold text-indigo-400">High Volume</span>
+                                <span class="text-xs text-slate-400">PDF Generator</span>
+                            </div>
+                        </div>
+                        <div class="pt-2 flex flex-wrap gap-2 text-xs">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">Core Java</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">JDBC</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">REST APIs</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">Automated PDF Engine</span>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 bg-gradient-to-br from-indigo-950/40 to-slate-950 p-6 rounded-2xl border border-slate-800/80">
+                        <h4 class="text-xs uppercase font-bold text-slate-400 tracking-wider mb-4">Project Highlights</h4>
+                        <ul class="space-y-3 text-xs text-slate-300">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+                                <span>Secure medical data isolation ensuring patient privacy standards.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+                                <span>High-performance batch PDF generation without server memory leaks.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE SCOPE & TURNAROUND ESTIMATOR -->
+    <section id="calculator" class="py-20 bg-slate-950/80 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs uppercase tracking-widest text-indigo-400 font-bold">Interactive Estimator</span>
+                <h2 class="text-3xl font-extrabold text-white mt-2 mb-3">Estimate Your Project Scope & Timeline</h2>
+                <p class="text-slate-400 text-sm">Select what you need to calculate an estimated delivery window and generate an instant quote request.</p>
+            </div>
+
+            <div class="p-8 sm:p-10 rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl">
+                <div class="space-y-6">
+                    <!-- Project Type -->
+                    <div>
+                        <label class="block text-xs uppercase font-bold text-slate-300 tracking-wider mb-3">1. Select Primary Service</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="serviceOptions">
+                            <button type="button" data-days="2" data-service="Payment Gateway Integration" class="service-btn p-4 rounded-xl border border-indigo-500 bg-indigo-500/10 text-left transition flex items-center justify-between">
+                                <div>
+                                    <span class="block font-semibold text-white text-sm">Payment Gateway Setup</span>
+                                    <span class="text-xs text-slate-400">Stripe / Razorpay + Webhooks</span>
+                                </div>
+                                <i class="fa-solid fa-check text-indigo-400"></i>
+                            </button>
+                            <button type="button" data-days="4" data-service="Admin Dashboard / CRUD" class="service-btn p-4 rounded-xl border border-slate-800 bg-slate-950/60 text-left hover:border-slate-700 transition flex items-center justify-between">
+                                <div>
+                                    <span class="block font-semibold text-white text-sm">Custom Admin Panel</span>
+                                    <span class="text-xs text-slate-400">Role-based controls & exports</span>
+                                </div>
+                                <i class="fa-solid fa-check text-transparent"></i>
+                            </button>
+                            <button type="button" data-days="3" data-service="Mobile REST API Suite" class="service-btn p-4 rounded-xl border border-slate-800 bg-slate-950/60 text-left hover:border-slate-700 transition flex items-center justify-between">
+                                <div>
+                                    <span class="block font-semibold text-white text-sm">REST API Endpoints</span>
+                                    <span class="text-xs text-slate-400">Secure auth & documentation</span>
+                                </div>
+                                <i class="fa-solid fa-check text-transparent"></i>
+                            </button>
+                            <button type="button" data-days="1" data-service="Bug Fixing & Speed Tuning" class="service-btn p-4 rounded-xl border border-slate-800 bg-slate-950/60 text-left hover:border-slate-700 transition flex items-center justify-between">
+                                <div>
+                                    <span class="block font-semibold text-white text-sm">Rapid Bug Fix & Speed</span>
+                                    <span class="text-xs text-slate-400">Database & crash fixes</span>
+                                </div>
+                                <i class="fa-solid fa-check text-transparent"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Add-ons -->
+                    <div>
+                        <label class="block text-xs uppercase font-bold text-slate-300 tracking-wider mb-3">2. Optional Add-ons</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <label class="p-3.5 rounded-xl border border-slate-800 bg-slate-950/40 flex items-center gap-3 cursor-pointer hover:border-slate-700 transition">
+                                <input type="checkbox" data-extra-days="1" value="PDF Invoices" class="addon-check rounded bg-slate-800 border-slate-700 text-indigo-500 focus:ring-0">
+                                <span class="text-xs font-medium text-slate-300">Automated PDF Export</span>
+                            </label>
+                            <label class="p-3.5 rounded-xl border border-slate-800 bg-slate-950/40 flex items-center gap-3 cursor-pointer hover:border-slate-700 transition">
+                                <input type="checkbox" data-extra-days="1" value="SMS/Email Alerts" class="addon-check rounded bg-slate-800 border-slate-700 text-indigo-500 focus:ring-0">
+                                <span class="text-xs font-medium text-slate-300">SMS / Email Notifications</span>
+                            </label>
+                            <label class="p-3.5 rounded-xl border border-slate-800 bg-slate-950/40 flex items-center gap-3 cursor-pointer hover:border-slate-700 transition">
+                                <input type="checkbox" data-extra-days="1" value="Deployment Support" class="addon-check rounded bg-slate-800 border-slate-700 text-indigo-500 focus:ring-0">
+                                <span class="text-xs font-medium text-slate-300">Live Server Deployment</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Calculated Result Box -->
+                    <div class="mt-8 p-6 rounded-2xl bg-indigo-950/30 border border-indigo-500/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div>
+                            <span class="text-xs text-indigo-300 uppercase tracking-wider font-semibold block">Estimated Delivery Window</span>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white mt-0.5">
+                                <span id="calculatedDays">2 - 3</span> Business Days
+                            </div>
+                            <span class="text-xs text-slate-400">Includes code reviews & staging tests</span>
+                        </div>
+                        <a id="estimatorWhatsApp" href="https://wa.me/919384139425?text=Hi%20Jothilakshmi,%20I%20am%20looking%20for%20Payment%20Gateway%20Integration." target="_blank" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Confirm Quote on WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4-STEP WORKING PROCESS -->
+    <section id="process" class="py-20 bg-[#0b0f19] border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-indigo-400 font-bold">Simple & Transparent</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-4">How We Will Work Together</h2>
+                <p class="text-slate-400 text-sm sm:text-base">A disciplined 4-stage delivery process to ensure you get exactly what you need with zero surprises.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 relative">
+                    <span class="text-3xl font-black text-indigo-500/30 mb-2 block">01</span>
+                    <h3 class="text-lg font-bold text-white mb-2">Discovery & Scope</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        We clarify the exact requirements, database schemas, and delivery deadlines. Fixed price or hourly milestone agreed in advance.
+                    </p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 relative">
+                    <span class="text-3xl font-black text-indigo-500/30 mb-2 block">02</span>
+                    <h3 class="text-lg font-bold text-white mb-2">Rapid Development</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        I develop your modules adhering strictly to clean code and OOP standards. You receive frequent progress updates.
+                    </p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 relative">
+                    <span class="text-3xl font-black text-indigo-500/30 mb-2 block">03</span>
+                    <h3 class="text-lg font-bold text-white mb-2">Staging & Testing</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        You test the working application on a staging server or via Postman collections to ensure it fulfills 100% of expectations.
+                    </p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 relative">
+                    <span class="text-3xl font-black text-indigo-500/30 mb-2 block">04</span>
+                    <h3 class="text-lg font-bold text-white mb-2">Launch & Support</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Seamless deployment to your production environment with complete documentation and post-launch troubleshooting warranty.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / HIRE ME SECTION -->
+    <section id="contact" class="py-20 bg-slate-950 border-t border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto rounded-3xl bg-slate-900 border border-slate-800 p-8 sm:p-14 shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Left: Contact Details -->
+                    <div class="space-y-6">
+                        <div>
+                            <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold">Let's Talk</span>
+                            <h2 class="text-3xl font-extrabold text-white mt-1">Have a Project in Mind?</h2>
+                            <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                                Whether you have a quick bug that needs fixing today, or you're planning a new web app, send me a message and I'll reply within a few hours.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4 pt-2">
+                            <a href="https://wa.me/919384139425" target="_blank" class="flex items-center gap-4 p-4 rounded-xl bg-slate-950/60 border border-slate-800 hover:border-emerald-500/40 transition group">
+                                <div class="w-12 h-12 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl group-hover:scale-105 transition">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <span class="block text-xs text-slate-400 font-medium">Instant Chat</span>
+                                    <span class="text-white font-semibold text-sm">+91 9384139425</span>
+                                </div>
+                            </a>
+
+                            <a href="mailto:jomurugan2004@gmail.com" class="flex items-center gap-4 p-4 rounded-xl bg-slate-950/60 border border-slate-800 hover:border-indigo-500/40 transition group">
+                                <div class="w-12 h-12 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl group-hover:scale-105 transition">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <span class="block text-xs text-slate-400 font-medium">Email Me</span>
+                                    <span class="text-white font-semibold text-sm">jomurugan2004@gmail.com</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Quick Message Form -->
+                    <div class="bg-slate-950/70 p-6 sm:p-8 rounded-2xl border border-slate-800">
+                        <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1.5">Your Name / Company</label>
+                                <input type="text" id="senderName" required placeholder="John Doe" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700/80 text-white text-sm focus:outline-none focus:border-indigo-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1.5">Your Email</label>
+                                <input type="email" id="senderEmail" required placeholder="john@example.com" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700/80 text-white text-sm focus:outline-none focus:border-indigo-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1.5">Project Details</label>
+                                <textarea id="projectDetails" rows="4" required placeholder="Describe what you need built, timeline, or links..." class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700/80 text-white text-sm focus:outline-none focus:border-indigo-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm shadow-lg shadow-indigo-600/30 transition">
+                                Send Inquiry &rarr;
+                            </button>
+                        </form>
+                        <div id="formSuccess" class="hidden mt-4 p-3 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs text-center font-medium">
+                            Thank you! Opening your email client to dispatch the message.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 bg-[#070b12] border-t border-slate-900 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
+            <p>© 2026 Jothilakshmi M. All rights reserved.</p>
+            <p>Built with Tailwind CSS & Clean Architecture • <a href="career.html" class="text-indigo-400 hover:underline">View Software Engineer Resume Portfolio</a></p>
+        </div>
+    </footer>
+
+    <!-- INTERACTION SCRIPT -->
+    <script>
+        // Estimator interactive logic
+        let baseDays = 2;
+        let selectedService = "Payment Gateway Integration";
+
+        const serviceButtons = document.querySelectorAll('.service-btn');
+        const addonChecks = document.querySelectorAll('.addon-check');
+        const calculatedDaysElem = document.getElementById('calculatedDays');
+        const estimatorWhatsApp = document.getElementById('estimatorWhatsApp');
+
+        function updateEstimate() {
+            let extra = 0;
+            let addOnList = [];
+            addonChecks.forEach(cb => {
+                if (cb.checked) {
+                    extra += parseInt(cb.dataset.extraDays || 0);
+                    addOnList.push(cb.value);
+                }
+            });
+
+            const totalMin = baseDays + extra;
+            const totalMax = totalMin + 1;
+            calculatedDaysElem.innerText = `${totalMin} - ${totalMax}`;
+
+            let msg = `Hi Jothilakshmi, I am looking for ${selectedService}`;
+            if (addOnList.length > 0) {
+                msg += ` with add-ons: ${addOnList.join(', ')}`;
+            }
+            msg += `. Estimated timeline: ${totalMin}-${totalMax} business days. Can we discuss?`;
+            estimatorWhatsApp.href = `https://wa.me/919384139425?text=${encodeURIComponent(msg)}`;
+        }
+
+        serviceButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                serviceButtons.forEach(b => {
+                    b.classList.remove('border-indigo-500', 'bg-indigo-500/10');
+                    b.classList.add('border-slate-800', 'bg-slate-950/60');
+                    b.querySelector('i').classList.remove('text-indigo-400');
+                    b.querySelector('i').classList.add('text-transparent');
+                });
+                btn.classList.remove('border-slate-800', 'bg-slate-950/60');
+                btn.classList.add('border-indigo-500', 'bg-indigo-500/10');
+                btn.querySelector('i').classList.remove('text-transparent');
+                btn.querySelector('i').classList.add('text-indigo-400');
+
+                baseDays = parseInt(btn.dataset.days);
+                selectedService = btn.dataset.service;
+                updateEstimate();
+            });
+        });
+
+        addonChecks.forEach(cb => cb.addEventListener('change', updateEstimate));
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('senderName').value;
+            const email = document.getElementById('senderEmail').value;
+            const msg = document.getElementById('projectDetails').value;
+            
+            document.getElementById('formSuccess').classList.remove('hidden');
+            const mailtoUrl = `mailto:jomurugan2004@gmail.com?subject=Project Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent("Client Email: " + email + "\n\nDetails:\n" + msg)}`;
+            setTimeout(() => {
+                window.location.href = mailtoUrl;
+            }, 800);
+        }
+    </script>
+</body>
+</html>
