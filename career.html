@@ -43,21 +43,6 @@
             border-radius: 42% 58% 65% 35% / 45% 48% 52% 55%;
         }
 
-        /* Hand wave animation */
-        @keyframes wave {
-            0% { transform: rotate(0deg); }
-            20% { transform: rotate(14deg); }
-            40% { transform: rotate(-8deg); }
-            60% { transform: rotate(14deg); }
-            80% { transform: rotate(-4deg); }
-            100% { transform: rotate(0deg); }
-        }
-        .animate-wave {
-            display: inline-block;
-            transform-origin: 70% 70%;
-            animation: wave 2.2s infinite;
-        }
-
         /* Print stylesheet */
         @media print {
             .no-print { display: none !important; }
@@ -123,7 +108,7 @@
                 <div class="lg:col-span-6 space-y-6">
                     <div>
                         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-poppins text-slate-900 tracking-tight leading-tight">
-                            Jothilakshmi M <span class="animate-wave">👋</span>
+                            Jothilakshmi M
                         </h1>
                         
                         <div class="flex items-center gap-3 text-slate-600 font-medium text-base sm:text-lg mt-3">
