@@ -37,7 +37,7 @@
         .blob-bg {
             border-radius: 42% 58% 65% 35% / 45% 48% 52% 55%;
             background: linear-gradient(135deg, #f59e0b 0%, #f97316 50%, #ea580c 100%);
-            box-shadow: 0 15px 30px -10px rgba(249, 115, 22, 0.3);
+            box-shadow: 0 10px 25px -8px rgba(249, 115, 22, 0.3);
         }
         .blob-img-frame {
             border-radius: 42% 58% 65% 35% / 45% 48% 52% 55%;
@@ -56,13 +56,13 @@
 
     <!-- COMPACT NAVBAR -->
     <nav class="no-print sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <a href="#home" class="text-xl font-bold font-poppins text-slate-900 tracking-tight hover:text-orange-500 transition">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
+            <a href="#home" class="text-lg font-bold font-poppins text-slate-900 tracking-tight hover:text-orange-500 transition">
                 Jothilakshmi M<span class="text-orange-500">.</span>
             </a>
 
             <!-- Desktop Nav Items -->
-            <div class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+            <div class="hidden md:flex items-center gap-6 text-xs sm:text-sm font-medium text-slate-600">
                 <a href="#home" class="text-orange-500 font-semibold hover:text-orange-600 transition">Home</a>
                 <a href="#about" class="hover:text-orange-500 transition">About</a>
                 <a href="#skills" class="hover:text-orange-500 transition">Skills</a>
@@ -72,26 +72,26 @@
             </div>
 
             <!-- Action Buttons -->
-            <div class="flex items-center gap-3">
-                <button onclick="window.print()" class="no-print inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-slate-200 text-xs font-semibold text-slate-700 hover:bg-slate-50 transition shadow-sm">
-                    <i class="fa-solid fa-file-arrow-down text-slate-500"></i>
+            <div class="flex items-center gap-2.5">
+                <button onclick="window.print()" class="no-print inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-slate-200 text-xs font-semibold text-slate-700 hover:bg-slate-50 transition shadow-sm">
+                    <i class="fa-solid fa-file-arrow-down text-slate-500 text-[11px]"></i>
                     <span>Resume (PDF)</span>
                 </button>
-                <a href="#contact" class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1e2022] hover:bg-black text-white text-xs font-semibold transition shadow-sm">
+                <a href="#contact" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#1e2022] hover:bg-black text-white text-xs font-semibold transition shadow-sm">
                     <span>Contact</span>
-                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    <i class="fa-solid fa-arrow-right text-[9px]"></i>
                 </a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION (COMPACT & ALIGNED) -->
-    <section id="home" class="relative py-10 sm:py-14 border-b border-slate-100">
+    <!-- HERO SECTION (COMPACT & PROPORTIONED) -->
+    <section id="home" class="relative py-6 sm:py-8 border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
                 
                 <!-- Left Social Sticky / Vertical Bar (Desktop) -->
-                <div class="hidden lg:flex lg:col-span-1 flex-col items-center gap-5 text-slate-400">
+                <div class="hidden lg:flex lg:col-span-1 flex-col items-center gap-4 text-slate-400">
                     <a href="https://github.com/Joo720" target="_blank" class="hover:text-orange-500 hover:scale-110 transition text-base" title="GitHub Profile">
                         <i class="fa-brands fa-github"></i>
                     </a>
@@ -101,18 +101,18 @@
                     <a href="tel:+919384139425" class="hover:text-orange-500 hover:scale-110 transition text-base" title="Phone">
                         <i class="fa-solid fa-phone"></i>
                     </a>
-                    <div class="w-[1px] h-12 bg-slate-200 mt-1"></div>
+                    <div class="w-[1px] h-10 bg-slate-200 mt-1"></div>
                 </div>
 
                 <!-- Hero Center-Left Text Content -->
-                <div class="lg:col-span-6 space-y-4">
+                <div class="lg:col-span-6 space-y-3">
                     <div>
-                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-poppins text-slate-900 tracking-tight leading-tight">
+                        <h1 class="text-3xl sm:text-4xl font-bold font-poppins text-slate-900 tracking-tight leading-tight">
                             Jothilakshmi M
                         </h1>
                         
-                        <div class="flex items-center gap-2.5 text-slate-600 font-medium text-sm sm:text-base mt-2">
-                            <span class="w-6 h-[2px] bg-slate-400"></span>
+                        <div class="flex items-center gap-2 text-slate-600 font-medium text-xs sm:text-sm mt-1.5">
+                            <span class="w-5 h-[2px] bg-slate-400"></span>
                             <span>Software Engineer, Java & Laravel Developer</span>
                         </div>
                     </div>
@@ -122,42 +122,42 @@
                     </p>
 
                     <!-- Fast Facts -->
-                    <div class="pt-2 flex items-center gap-6 text-xs text-slate-500 border-t border-slate-100">
+                    <div class="pt-2 flex items-center gap-5 text-xs text-slate-500 border-t border-slate-100">
                         <div>
                             <span class="block text-slate-900 font-bold text-sm">3+ Years</span>
-                            <span class="text-[11px]">Commercial Experience</span>
+                            <span class="text-[11px]">Experience</span>
                         </div>
-                        <div class="w-[1px] h-7 bg-slate-200"></div>
+                        <div class="w-[1px] h-6 bg-slate-200"></div>
                         <div>
                             <span class="block text-slate-900 font-bold text-sm">86.9%</span>
-                            <span class="text-[11px]">MCA Master's Degree</span>
+                            <span class="text-[11px]">MCA Degree</span>
                         </div>
-                        <div class="w-[1px] h-7 bg-slate-200"></div>
+                        <div class="w-[1px] h-6 bg-slate-200"></div>
                         <div>
                             <span class="block text-emerald-600 font-bold text-sm">Zero Downtime</span>
-                            <span class="text-[11px]">System Reliability</span>
+                            <span class="text-[11px]">Reliability</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Hero Right: Profile Photo inside Organic Orange Blob -->
+                <!-- Hero Right: Seated Profile Photo inside Organic Orange Blob -->
                 <div class="lg:col-span-5 flex justify-center lg:justify-end">
-                    <div class="relative w-64 h-72 sm:w-72 sm:h-80">
+                    <div class="relative w-56 h-64 sm:w-64 sm:h-72">
                         <!-- Organic Blob Orange Backdrop -->
                         <div class="absolute inset-0 blob-bg transform -rotate-1"></div>
                         
                         <!-- Image Container with matching organic cutout -->
-                        <div class="absolute inset-2 overflow-hidden blob-img-frame border-4 border-white shadow-inner bg-slate-100">
-                            <img src="profile.jpg?v=2" alt="Jothilakshmi M — Software Developer" class="w-full h-full object-cover object-[center_18%]">
+                        <div class="absolute inset-2 overflow-hidden blob-img-frame border-3 border-white shadow-inner bg-slate-100">
+                            <img src="jothi.jpg" alt="Jothilakshmi M — Software Developer" class="w-full h-full object-cover object-[center_15%]">
                         </div>
 
                         <!-- Badge Overlay -->
-                        <div class="absolute -bottom-2 -left-2 bg-white/95 backdrop-blur-sm border border-slate-100 rounded-xl px-3 py-2 shadow-md flex items-center gap-2.5">
-                            <div class="w-8 h-8 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center font-bold text-xs">
+                        <div class="absolute -bottom-1 -left-1 bg-white/95 backdrop-blur-sm border border-slate-100 rounded-lg px-2.5 py-1.5 shadow-md flex items-center gap-2">
+                            <div class="w-7 h-7 rounded-md bg-orange-50 text-orange-600 flex items-center justify-center font-bold text-xs">
                                 <i class="fa-solid fa-code"></i>
                             </div>
                             <div>
-                                <span class="block text-xs font-bold text-slate-900">Backend Specialist</span>
+                                <span class="block text-[11px] font-bold text-slate-900 leading-tight">Backend Specialist</span>
                                 <span class="text-[10px] text-slate-500">Core Java • PHP Laravel</span>
                             </div>
                         </div>
@@ -169,15 +169,15 @@
     </section>
 
     <!-- ABOUT ME SECTION (COMPACT) -->
-    <section id="about" class="py-10 sm:py-12 bg-slate-50/60 border-b border-slate-100">
+    <section id="about" class="py-6 sm:py-8 bg-slate-50/60 border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-xl mx-auto mb-8">
-                <span class="text-xs uppercase font-bold tracking-widest text-orange-500">My Introduction</span>
-                <h2 class="text-2xl sm:text-3xl font-bold font-poppins text-slate-900 mt-1">About Me</h2>
+            <div class="text-center max-w-xl mx-auto mb-4">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-orange-500">My Introduction</span>
+                <h2 class="text-2xl font-bold font-poppins text-slate-900 mt-0.5">About Me</h2>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-                <div class="md:col-span-7 space-y-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-5 items-center">
+                <div class="md:col-span-7 space-y-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed">
                     <p>
                         I am a <strong>Software Engineer & Backend Developer</strong> with 3 years of commercial software development experience. My primary technical foundation lies in Object-Oriented Programming (OOPs), relational database schemas, RESTful API development, and enterprise applications.
                     </p>
@@ -189,29 +189,29 @@
                     </p>
                 </div>
 
-                <div class="md:col-span-5 grid grid-cols-2 gap-3">
-                    <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm print-card">
-                        <i class="fa-solid fa-briefcase text-orange-500 text-lg mb-1 block"></i>
-                        <span class="block text-lg font-bold text-slate-900">3 Years</span>
-                        <span class="text-[11px] text-slate-500">Commercial Experience</span>
+                <div class="md:col-span-5 grid grid-cols-2 gap-2.5">
+                    <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm print-card">
+                        <i class="fa-solid fa-briefcase text-orange-500 text-base mb-1 block"></i>
+                        <span class="block text-base font-bold text-slate-900">3 Years</span>
+                        <span class="text-[10px] text-slate-500">Commercial Experience</span>
                     </div>
 
-                    <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm print-card">
-                        <i class="fa-solid fa-graduation-cap text-orange-500 text-lg mb-1 block"></i>
-                        <span class="block text-lg font-bold text-slate-900">MCA</span>
-                        <span class="text-[11px] text-slate-500">Master's • 86.9%</span>
+                    <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm print-card">
+                        <i class="fa-solid fa-graduation-cap text-orange-500 text-base mb-1 block"></i>
+                        <span class="block text-base font-bold text-slate-900">MCA</span>
+                        <span class="text-[10px] text-slate-500">Master's • 86.9%</span>
                     </div>
 
-                    <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm print-card">
-                        <i class="fa-solid fa-server text-orange-500 text-lg mb-1 block"></i>
-                        <span class="block text-lg font-bold text-slate-900">Backend</span>
-                        <span class="text-[11px] text-slate-500">Java, PHP & Laravel</span>
+                    <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm print-card">
+                        <i class="fa-solid fa-server text-orange-500 text-base mb-1 block"></i>
+                        <span class="block text-base font-bold text-slate-900">Backend</span>
+                        <span class="text-[10px] text-slate-500">Java, PHP & Laravel</span>
                     </div>
 
-                    <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm print-card">
-                        <i class="fa-solid fa-location-dot text-orange-500 text-lg mb-1 block"></i>
-                        <span class="block text-lg font-bold text-slate-900">Chennai</span>
-                        <span class="text-[11px] text-slate-500">Tamil Nadu, India</span>
+                    <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm print-card">
+                        <i class="fa-solid fa-location-dot text-orange-500 text-base mb-1 block"></i>
+                        <span class="block text-base font-bold text-slate-900">Chennai</span>
+                        <span class="text-[10px] text-slate-500">Tamil Nadu, India</span>
                     </div>
                 </div>
             </div>
@@ -219,67 +219,67 @@
     </section>
 
     <!-- TECHNICAL SKILLS SECTION (COMPACT) -->
-    <section id="skills" class="py-10 sm:py-12 bg-white border-b border-slate-100">
+    <section id="skills" class="py-6 sm:py-8 bg-white border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-xl mx-auto mb-8">
-                <span class="text-xs uppercase font-bold tracking-widest text-orange-500">Technical Expertise</span>
-                <h2 class="text-2xl sm:text-3xl font-bold font-poppins text-slate-900 mt-1">Skills & Tools</h2>
+            <div class="text-center max-w-xl mx-auto mb-4">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-orange-500">Technical Expertise</span>
+                <h2 class="text-2xl font-bold font-poppins text-slate-900 mt-0.5">Skills & Tools</h2>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
                 <!-- Skill Card 1 -->
-                <div class="p-5 rounded-xl border border-slate-200 hover:border-orange-500/40 hover:shadow-sm transition bg-slate-50/40 print-card space-y-2.5">
-                    <div class="w-9 h-9 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center text-sm">
+                <div class="p-4 rounded-xl border border-slate-200 hover:border-orange-500/40 transition bg-slate-50/40 print-card space-y-2">
+                    <div class="w-8 h-8 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center text-xs">
                         <i class="fa-solid fa-code"></i>
                     </div>
-                    <h3 class="font-bold text-slate-900 text-sm">Languages</h3>
-                    <ul class="text-xs text-slate-600 space-y-1.5">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-orange-500 text-[9px]"></i> Core Java (Servlets, JDBC)</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-orange-500 text-[9px]"></i> PHP 8.x</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-orange-500 text-[9px]"></i> SQL (MySQL)</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-orange-500 text-[9px]"></i> HTML5, CSS3, JavaScript</li>
+                    <h3 class="font-bold text-slate-900 text-xs sm:text-sm">Languages</h3>
+                    <ul class="text-[11px] text-slate-600 space-y-1">
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-orange-500 text-[8px]"></i> Core Java (Servlets, JDBC)</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-orange-500 text-[8px]"></i> PHP 8.x</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-orange-500 text-[8px]"></i> SQL (MySQL)</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-orange-500 text-[8px]"></i> HTML5, CSS3, JavaScript</li>
                     </ul>
                 </div>
 
                 <!-- Skill Card 2 -->
-                <div class="p-5 rounded-xl border border-slate-200 hover:border-orange-500/40 hover:shadow-sm transition bg-slate-50/40 print-card space-y-2.5">
-                    <div class="w-9 h-9 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center text-sm">
+                <div class="p-4 rounded-xl border border-slate-200 hover:border-orange-500/40 transition bg-slate-50/40 print-card space-y-2">
+                    <div class="w-8 h-8 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center text-xs">
                         <i class="fa-solid fa-layer-group"></i>
                     </div>
-                    <h3 class="font-bold text-slate-900 text-sm">Backend & Architecture</h3>
-                    <ul class="text-xs text-slate-600 space-y-1.5">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-orange-500 text-[9px]"></i> Laravel Framework</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-orange-500 text-[9px]"></i> RESTful API Engineering</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-orange-500 text-[9px]"></i> MVC & OOPs Principles</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-orange-500 text-[9px]"></i> Clean Architecture</li>
+                    <h3 class="font-bold text-slate-900 text-xs sm:text-sm">Backend & Architecture</h3>
+                    <ul class="text-[11px] text-slate-600 space-y-1">
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-orange-500 text-[8px]"></i> Laravel Framework</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-orange-500 text-[8px]"></i> RESTful API Engineering</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-orange-500 text-[8px]"></i> MVC & OOPs Principles</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-orange-500 text-[8px]"></i> Clean Architecture</li>
                     </ul>
                 </div>
 
                 <!-- Skill Card 3 -->
-                <div class="p-5 rounded-xl border border-slate-200 hover:border-orange-500/40 hover:shadow-sm transition bg-slate-50/40 print-card space-y-2.5">
-                    <div class="w-9 h-9 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center text-sm">
+                <div class="p-4 rounded-xl border border-slate-200 hover:border-orange-500/40 transition bg-slate-50/40 print-card space-y-2">
+                    <div class="w-8 h-8 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center text-xs">
                         <i class="fa-solid fa-database"></i>
                     </div>
-                    <h3 class="font-bold text-slate-900 text-sm">Databases</h3>
-                    <ul class="text-xs text-slate-600 space-y-1.5">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-orange-500 text-[9px]"></i> MySQL Relational Database</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-orange-500 text-[9px]"></i> Query Indexing & Tuning</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-orange-500 text-[9px]"></i> Schema Normalization</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-orange-500 text-[9px]"></i> Database Migrations</li>
+                    <h3 class="font-bold text-slate-900 text-xs sm:text-sm">Databases</h3>
+                    <ul class="text-[11px] text-slate-600 space-y-1">
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-orange-500 text-[8px]"></i> MySQL Database</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-orange-500 text-[8px]"></i> Query Indexing & Tuning</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-orange-500 text-[8px]"></i> Schema Normalization</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-orange-500 text-[8px]"></i> Database Migrations</li>
                     </ul>
                 </div>
 
                 <!-- Skill Card 4 -->
-                <div class="p-5 rounded-xl border border-slate-200 hover:border-orange-500/40 hover:shadow-sm transition bg-slate-50/40 print-card space-y-2.5">
-                    <div class="w-9 h-9 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center text-sm">
+                <div class="p-4 rounded-xl border border-slate-200 hover:border-orange-500/40 transition bg-slate-50/40 print-card space-y-2">
+                    <div class="w-8 h-8 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center text-xs">
                         <i class="fa-solid fa-screwdriver-wrench"></i>
                     </div>
-                    <h3 class="font-bold text-slate-900 text-sm">Tools & Delivery</h3>
-                    <ul class="text-xs text-slate-600 space-y-1.5">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-orange-500 text-[9px]"></i> Git, GitHub & Version Control</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-orange-500 text-[9px]"></i> Postman API Testing</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-orange-500 text-[9px]"></i> Agile / Scrum Methodologies</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-orange-500 text-[9px]"></i> Automated PDF Engines & Zapier</li>
+                    <h3 class="font-bold text-slate-900 text-xs sm:text-sm">Tools & Delivery</h3>
+                    <ul class="text-[11px] text-slate-600 space-y-1">
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-orange-500 text-[8px]"></i> Git, GitHub Version Control</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-orange-500 text-[8px]"></i> Postman API Testing</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-orange-500 text-[8px]"></i> Agile / Scrum Methodologies</li>
+                        <li class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-orange-500 text-[8px]"></i> Automated PDF & Zapier</li>
                     </ul>
                 </div>
             </div>
@@ -287,27 +287,27 @@
     </section>
 
     <!-- EXPERIENCE SECTION (COMPACT) -->
-    <section id="experience" class="py-10 sm:py-12 bg-slate-50/60 border-b border-slate-100">
+    <section id="experience" class="py-6 sm:py-8 bg-slate-50/60 border-b border-slate-100">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-xl mx-auto mb-8">
-                <span class="text-xs uppercase font-bold tracking-widest text-orange-500">Career Progression</span>
-                <h2 class="text-2xl sm:text-3xl font-bold font-poppins text-slate-900 mt-1">Work Experience</h2>
+            <div class="text-center max-w-xl mx-auto mb-4">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-orange-500">Career Progression</span>
+                <h2 class="text-2xl font-bold font-poppins text-slate-900 mt-0.5">Work Experience</h2>
             </div>
 
-            <div class="space-y-5">
+            <div class="space-y-3.5">
                 <!-- Role 1 -->
-                <div class="p-5 sm:p-6 rounded-xl bg-white border border-slate-200 shadow-sm print-card space-y-3">
-                    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 border-b border-slate-100 pb-2.5">
+                <div class="p-4 sm:p-5 rounded-xl bg-white border border-slate-200 shadow-sm print-card space-y-2">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 border-b border-slate-100 pb-2">
                         <div>
-                            <h3 class="text-base font-bold text-slate-900">Junior Software Developer / Backend Developer</h3>
+                            <h3 class="text-sm sm:text-base font-bold text-slate-900">Junior Software Developer / Backend Developer</h3>
                             <span class="text-xs font-semibold text-orange-600">Zaigo Infotech, Chennai</span>
                         </div>
-                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-orange-50 text-orange-700 text-xs font-bold w-fit">
+                        <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-orange-50 text-orange-700 text-[10px] font-bold w-fit">
                             May 2024 – Present
                         </span>
                     </div>
 
-                    <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside leading-relaxed">
+                    <ul class="text-[11px] sm:text-xs text-slate-600 space-y-1.5 list-disc list-inside leading-relaxed">
                         <li>Designed, developed, and maintained secure RESTful APIs and backend processing modules using <strong>Core Java and PHP</strong>, ensuring optimal system response times and zero downtime.</li>
                         <li>Applied rigorous <strong>Object-Oriented Programming (OOP)</strong> design principles to build reusable backend architecture, service layers, and clean, modular codebases.</li>
                         <li>Collaborated closely with cross-functional product, frontend, mobile, and QA teams within fast-paced <strong>Agile/Scrum</strong> environments to seamlessly deliver feature updates.</li>
@@ -319,18 +319,18 @@
                 </div>
 
                 <!-- Role 2 -->
-                <div class="p-5 sm:p-6 rounded-xl bg-white border border-slate-200 shadow-sm print-card space-y-3">
-                    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 border-b border-slate-100 pb-2.5">
+                <div class="p-4 sm:p-5 rounded-xl bg-white border border-slate-200 shadow-sm print-card space-y-2">
+                    <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 border-b border-slate-100 pb-2">
                         <div>
-                            <h3 class="text-base font-bold text-slate-900">Junior PHP Laravel Developer</h3>
+                            <h3 class="text-sm sm:text-base font-bold text-slate-900">Junior PHP Laravel Developer</h3>
                             <span class="text-xs font-semibold text-slate-700">Renga Technology, Virudhunagar</span>
                         </div>
-                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700 text-xs font-bold w-fit">
+                        <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 text-[10px] font-bold w-fit">
                             Jun 2023 – May 2024
                         </span>
                     </div>
 
-                    <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside leading-relaxed">
+                    <ul class="text-[11px] sm:text-xs text-slate-600 space-y-1.5 list-disc list-inside leading-relaxed">
                         <li>Developed scalable server-side web applications using <strong>PHP and Laravel</strong>, managing core backend business logic and structural database operations.</li>
                         <li>Built efficient backend admin interfaces to streamline enterprise operations and administrative workflows.</li>
                         <li>Constructed transactional database schemas and inventory tracking mechanisms for high-volume festive e-commerce platforms.</li>
@@ -342,124 +342,121 @@
     </section>
 
     <!-- PORTFOLIO PROJECTS SECTION (COMPACT) -->
-    <section id="projects" class="py-10 sm:py-12 bg-white border-b border-slate-100">
+    <section id="projects" class="py-6 sm:py-8 bg-white border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-xl mx-auto mb-8">
-                <span class="text-xs uppercase font-bold tracking-widest text-orange-500">Featured Work</span>
-                <h2 class="text-2xl sm:text-3xl font-bold font-poppins text-slate-900 mt-1">Engineering Projects</h2>
+            <div class="text-center max-w-xl mx-auto mb-4">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-orange-500">Featured Work</span>
+                <h2 class="text-2xl font-bold font-poppins text-slate-900 mt-0.5">Engineering Projects</h2>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                 <!-- Project 1 -->
-                <div class="p-5 rounded-xl border border-slate-200 hover:border-orange-500/40 hover:shadow-sm transition bg-slate-50/30 print-card flex flex-col justify-between space-y-3">
-                    <div class="space-y-1.5">
+                <div class="p-4 rounded-xl border border-slate-200 hover:border-orange-500/40 transition bg-slate-50/30 print-card flex flex-col justify-between space-y-2.5">
+                    <div class="space-y-1">
                         <div class="flex justify-between items-center">
-                            <span class="text-[10px] font-bold uppercase text-orange-500">Healthcare Backend</span>
-                            <span class="text-[10px] text-slate-400">Zaigo Infotech</span>
+                            <span class="text-[9px] font-bold uppercase text-orange-500">Healthcare Backend</span>
+                            <span class="text-[9px] text-slate-400">Zaigo Infotech</span>
                         </div>
-                        <h3 class="text-base font-bold text-slate-900">Neurovanna</h3>
-                        <p class="text-xs text-slate-600 leading-relaxed">
+                        <h3 class="text-xs sm:text-sm font-bold text-slate-900">Neurovanna</h3>
+                        <p class="text-[11px] text-slate-600 leading-normal">
                             Medical breath test order platform with high-volume automated PDF lab report generation. Optimized REST API endpoints and relational schemas.
                         </p>
                     </div>
-                    <div class="flex flex-wrap gap-1 pt-2 border-t border-slate-200 text-[10px] font-medium text-slate-600">
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200">Core Java</span>
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200">JDBC</span>
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200">MySQL</span>
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200">PDF Engine</span>
+                    <div class="flex flex-wrap gap-1 pt-1.5 border-t border-slate-200 text-[9px] font-medium text-slate-600">
+                        <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200">Core Java</span>
+                        <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200">JDBC</span>
+                        <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200">MySQL</span>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="p-5 rounded-xl border border-slate-200 hover:border-orange-500/40 hover:shadow-sm transition bg-slate-50/30 print-card flex flex-col justify-between space-y-3">
-                    <div class="space-y-1.5">
+                <div class="p-4 rounded-xl border border-slate-200 hover:border-orange-500/40 transition bg-slate-50/30 print-card flex flex-col justify-between space-y-2.5">
+                    <div class="space-y-1">
                         <div class="flex justify-between items-center">
-                            <span class="text-[10px] font-bold uppercase text-orange-500">Digital Provenance</span>
-                            <span class="text-[10px] text-slate-400">Zaigo Infotech</span>
+                            <span class="text-[9px] font-bold uppercase text-orange-500">Digital Provenance</span>
+                            <span class="text-[9px] text-slate-400">Zaigo Infotech</span>
                         </div>
-                        <h3 class="text-base font-bold text-slate-900">Authenticator Blockchain</h3>
-                        <p class="text-xs text-slate-600 leading-relaxed">
+                        <h3 class="text-xs sm:text-sm font-bold text-slate-900">Authenticator Blockchain</h3>
+                        <p class="text-[11px] text-slate-600 leading-normal">
                             Implemented immutable asset creation and certificate generation pipelines using Multichain technology and C2PA content verification.
                         </p>
                     </div>
-                    <div class="flex flex-wrap gap-1 pt-2 border-t border-slate-200 text-[10px] font-medium text-slate-600">
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200">PHP</span>
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200">Multichain</span>
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200">C2PA</span>
+                    <div class="flex flex-wrap gap-1 pt-1.5 border-t border-slate-200 text-[9px] font-medium text-slate-600">
+                        <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200">PHP</span>
+                        <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200">Multichain</span>
+                        <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200">C2PA</span>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="p-5 rounded-xl border border-slate-200 hover:border-orange-500/40 hover:shadow-sm transition bg-slate-50/30 print-card flex flex-col justify-between space-y-3">
-                    <div class="space-y-1.5">
+                <div class="p-4 rounded-xl border border-slate-200 hover:border-orange-500/40 transition bg-slate-50/30 print-card flex flex-col justify-between space-y-2.5">
+                    <div class="space-y-1">
                         <div class="flex justify-between items-center">
-                            <span class="text-[10px] font-bold uppercase text-orange-500">Mobile REST APIs</span>
-                            <span class="text-[10px] text-slate-400">Zaigo Infotech</span>
+                            <span class="text-[9px] font-bold uppercase text-orange-500">Mobile REST APIs</span>
+                            <span class="text-[9px] text-slate-400">Zaigo Infotech</span>
                         </div>
-                        <h3 class="text-base font-bold text-slate-900">Church App (Reflection Rosary 365)</h3>
-                        <p class="text-xs text-slate-600 leading-relaxed">
+                        <h3 class="text-xs sm:text-sm font-bold text-slate-900">Church App (Reflection Rosary 365)</h3>
+                        <p class="text-[11px] text-slate-600 leading-normal">
                             Engineered resilient backend REST APIs for a cross-platform meditation mobile app supporting daily content delivery and progress tracking.
                         </p>
                     </div>
-                    <div class="flex flex-wrap gap-1 pt-2 border-t border-slate-200 text-[10px] font-medium text-slate-600">
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200">Laravel</span>
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200">Mobile APIs</span>
+                    <div class="flex flex-wrap gap-1 pt-1.5 border-t border-slate-200 text-[9px] font-medium text-slate-600">
+                        <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200">Laravel</span>
+                        <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200">Mobile APIs</span>
                     </div>
                 </div>
 
                 <!-- Project 4 -->
-                <div class="p-5 rounded-xl border border-slate-200 hover:border-orange-500/40 hover:shadow-sm transition bg-slate-50/30 print-card flex flex-col justify-between space-y-3">
-                    <div class="space-y-1.5">
+                <div class="p-4 rounded-xl border border-slate-200 hover:border-orange-500/40 transition bg-slate-50/30 print-card flex flex-col justify-between space-y-2.5">
+                    <div class="space-y-1">
                         <div class="flex justify-between items-center">
-                            <span class="text-[10px] font-bold uppercase text-orange-500">Modular Package</span>
-                            <span class="text-[10px] text-slate-400">Zaigo Infotech</span>
+                            <span class="text-[9px] font-bold uppercase text-orange-500">Modular Package</span>
+                            <span class="text-[9px] text-slate-400">Zaigo Infotech</span>
                         </div>
-                        <h3 class="text-base font-bold text-slate-900">Lara-docs Package</h3>
-                        <p class="text-xs text-slate-600 leading-relaxed">
+                        <h3 class="text-xs sm:text-sm font-bold text-slate-900">Lara-docs Package</h3>
+                        <p class="text-[11px] text-slate-600 leading-normal">
                             Architected and published a reusable custom Laravel package designed to standardize document management and uploads across client applications.
                         </p>
                     </div>
-                    <div class="flex flex-wrap gap-1 pt-2 border-t border-slate-200 text-[10px] font-medium text-slate-600">
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200">PHP</span>
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200">Package Dev</span>
+                    <div class="flex flex-wrap gap-1 pt-1.5 border-t border-slate-200 text-[9px] font-medium text-slate-600">
+                        <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200">PHP</span>
+                        <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200">Package Dev</span>
                     </div>
                 </div>
 
                 <!-- Project 5 -->
-                <div class="p-5 rounded-xl border border-slate-200 hover:border-orange-500/40 hover:shadow-sm transition bg-slate-50/30 print-card flex flex-col justify-between space-y-3">
-                    <div class="space-y-1.5">
+                <div class="p-4 rounded-xl border border-slate-200 hover:border-orange-500/40 transition bg-slate-50/30 print-card flex flex-col justify-between space-y-2.5">
+                    <div class="space-y-1">
                         <div class="flex justify-between items-center">
-                            <span class="text-[10px] font-bold uppercase text-orange-500">E-Commerce Backend</span>
-                            <span class="text-[10px] text-slate-400">Renga Technology</span>
+                            <span class="text-[9px] font-bold uppercase text-orange-500">E-Commerce Backend</span>
+                            <span class="text-[9px] text-slate-400">Renga Technology</span>
                         </div>
-                        <h3 class="text-base font-bold text-slate-900">Fireworks E-Commerce Engines</h3>
-                        <p class="text-xs text-slate-600 leading-relaxed">
+                        <h3 class="text-xs sm:text-sm font-bold text-slate-900">Fireworks E-Commerce Engines</h3>
+                        <p class="text-[11px] text-slate-600 leading-normal">
                             Built complete backend logic, inventory sync, and database layers for high-volume fireworks platforms handling seasonal surge orders.
                         </p>
                     </div>
-                    <div class="flex flex-wrap gap-1 pt-2 border-t border-slate-200 text-[10px] font-medium text-slate-600">
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200">PHP</span>
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200">Laravel</span>
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200">MySQL</span>
+                    <div class="flex flex-wrap gap-1 pt-1.5 border-t border-slate-200 text-[9px] font-medium text-slate-600">
+                        <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200">PHP</span>
+                        <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200">Laravel</span>
                     </div>
                 </div>
 
                 <!-- Project 6 -->
-                <div class="p-5 rounded-xl border border-slate-200 hover:border-orange-500/40 hover:shadow-sm transition bg-slate-50/30 print-card flex flex-col justify-between space-y-3">
-                    <div class="space-y-1.5">
+                <div class="p-4 rounded-xl border border-slate-200 hover:border-orange-500/40 transition bg-slate-50/30 print-card flex flex-col justify-between space-y-2.5">
+                    <div class="space-y-1">
                         <div class="flex justify-between items-center">
-                            <span class="text-[10px] font-bold uppercase text-orange-500">Academic Capstone</span>
-                            <span class="text-[10px] text-slate-400">V.H.N.S.N College</span>
+                            <span class="text-[9px] font-bold uppercase text-orange-500">Academic Capstone</span>
+                            <span class="text-[9px] text-slate-400">V.H.N.S.N College</span>
                         </div>
-                        <h3 class="text-base font-bold text-slate-900">Online Mentoring System</h3>
-                        <p class="text-xs text-slate-600 leading-relaxed">
+                        <h3 class="text-xs sm:text-sm font-bold text-slate-900">Online Mentoring System</h3>
+                        <p class="text-[11px] text-slate-600 leading-normal">
                             Role-based student portal for managing academic profiles, enabling administrative leadership to securely retrieve student records by Roll Number.
                         </p>
                     </div>
-                    <div class="flex flex-wrap gap-1 pt-2 border-t border-slate-200 text-[10px] font-medium text-slate-600">
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200">PHP</span>
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200">Laravel</span>
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200">MySQL</span>
+                    <div class="flex flex-wrap gap-1 pt-1.5 border-t border-slate-200 text-[9px] font-medium text-slate-600">
+                        <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200">PHP</span>
+                        <span class="px-1.5 py-0.5 rounded bg-white border border-slate-200">Laravel</span>
                     </div>
                 </div>
             </div>
@@ -467,75 +464,75 @@
     </section>
 
     <!-- EDUCATION SECTION (COMPACT) -->
-    <section id="education" class="py-10 sm:py-12 bg-slate-50/60 border-b border-slate-100">
+    <section id="education" class="py-6 sm:py-8 bg-slate-50/60 border-b border-slate-100">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-xl mx-auto mb-8">
-                <span class="text-xs uppercase font-bold tracking-widest text-orange-500">Academic Background</span>
-                <h2 class="text-2xl sm:text-3xl font-bold font-poppins text-slate-900 mt-1">Education</h2>
+            <div class="text-center max-w-xl mx-auto mb-4">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-orange-500">Academic Background</span>
+                <h2 class="text-2xl font-bold font-poppins text-slate-900 mt-0.5">Education</h2>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="p-5 rounded-xl bg-white border border-slate-200 shadow-sm print-card space-y-1.5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm print-card space-y-1">
                     <div class="flex justify-between items-baseline">
-                        <h3 class="font-bold text-slate-900 text-sm sm:text-base">Master of Computer Application (MCA)</h3>
-                        <span class="text-xs font-bold text-emerald-700 px-2.5 py-0.5 rounded-full bg-emerald-50 border border-emerald-200">86.9%</span>
+                        <h3 class="font-bold text-slate-900 text-xs sm:text-sm">Master of Computer Application (MCA)</h3>
+                        <span class="text-[11px] font-bold text-emerald-700 px-2 py-0.5 rounded-full bg-emerald-50 border border-emerald-200">86.9%</span>
                     </div>
-                    <p class="text-xs sm:text-sm text-slate-600 font-medium">V.H.N.S.N College</p>
-                    <span class="text-xs text-slate-400 block">May 2021 – Apr 2023</span>
+                    <p class="text-xs text-slate-600 font-medium">V.H.N.S.N College</p>
+                    <span class="text-[10px] text-slate-400 block">May 2021 – Apr 2023</span>
                 </div>
 
-                <div class="p-5 rounded-xl bg-white border border-slate-200 shadow-sm print-card space-y-1.5">
+                <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm print-card space-y-1">
                     <div class="flex justify-between items-baseline">
-                        <h3 class="font-bold text-slate-900 text-sm sm:text-base">Bachelor of Computer Application (BCA)</h3>
-                        <span class="text-xs font-bold text-blue-700 px-2.5 py-0.5 rounded-full bg-blue-50 border border-blue-200">82.7%</span>
+                        <h3 class="font-bold text-slate-900 text-xs sm:text-sm">Bachelor of Computer Application (BCA)</h3>
+                        <span class="text-[11px] font-bold text-blue-700 px-2 py-0.5 rounded-full bg-blue-50 border border-blue-200">82.7%</span>
                     </div>
-                    <p class="text-xs sm:text-sm text-slate-600 font-medium">V.H.N.S.N College</p>
-                    <span class="text-xs text-slate-400 block">May 2018 – Apr 2021</span>
+                    <p class="text-xs text-slate-600 font-medium">V.H.N.S.N College</p>
+                    <span class="text-[10px] text-slate-400 block">May 2018 – Apr 2021</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CONTACT SECTION (COMPACT) -->
-    <section id="contact" class="py-10 sm:py-12 bg-white">
+    <section id="contact" class="py-6 sm:py-8 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-xl mx-auto mb-8">
-                <span class="text-xs uppercase font-bold tracking-widest text-orange-500">Get In Touch</span>
-                <h2 class="text-2xl sm:text-3xl font-bold font-poppins text-slate-900 mt-1">Contact Me</h2>
-                <p class="text-slate-500 text-xs sm:text-sm mt-1">Available for software engineering roles and career opportunities.</p>
+            <div class="text-center max-w-xl mx-auto mb-4">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-orange-500">Get In Touch</span>
+                <h2 class="text-2xl font-bold font-poppins text-slate-900 mt-0.5">Contact Me</h2>
+                <p class="text-slate-500 text-xs mt-0.5">Available for software engineering roles and career opportunities.</p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                <a href="mailto:jomurugan2004@gmail.com" class="p-5 rounded-xl border border-slate-200 hover:border-orange-500/50 hover:shadow-sm transition bg-slate-50/50 text-center space-y-1.5 block">
-                    <div class="w-9 h-9 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center mx-auto text-sm">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                <a href="mailto:jomurugan2004@gmail.com" class="p-3.5 rounded-xl border border-slate-200 hover:border-orange-500/50 hover:shadow-sm transition bg-slate-50/50 text-center space-y-1 block">
+                    <div class="w-8 h-8 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center mx-auto text-xs">
                         <i class="fa-regular fa-envelope"></i>
                     </div>
-                    <span class="block text-xs font-bold text-slate-900">Email</span>
+                    <span class="block text-[11px] font-bold text-slate-900">Email</span>
                     <span class="text-xs text-slate-600 break-all">jomurugan2004@gmail.com</span>
                 </a>
 
-                <a href="tel:+919384139425" class="p-5 rounded-xl border border-slate-200 hover:border-orange-500/50 hover:shadow-sm transition bg-slate-50/50 text-center space-y-1.5 block">
-                    <div class="w-9 h-9 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center mx-auto text-sm">
+                <a href="tel:+919384139425" class="p-3.5 rounded-xl border border-slate-200 hover:border-orange-500/50 hover:shadow-sm transition bg-slate-50/50 text-center space-y-1 block">
+                    <div class="w-8 h-8 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center mx-auto text-xs">
                         <i class="fa-solid fa-phone"></i>
                     </div>
-                    <span class="block text-xs font-bold text-slate-900">Phone / Call</span>
+                    <span class="block text-[11px] font-bold text-slate-900">Phone / Call</span>
                     <span class="text-xs text-slate-600">+91 9384139425</span>
                 </a>
 
-                <div class="p-5 rounded-xl border border-slate-200 bg-slate-50/50 text-center space-y-1.5">
-                    <div class="w-9 h-9 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center mx-auto text-sm">
+                <div class="p-3.5 rounded-xl border border-slate-200 bg-slate-50/50 text-center space-y-1">
+                    <div class="w-8 h-8 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center mx-auto text-xs">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <span class="block text-xs font-bold text-slate-900">Location</span>
+                    <span class="block text-[11px] font-bold text-slate-900">Location</span>
                     <span class="text-xs text-slate-600">Chennai / Virudhunagar, India</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="no-print border-t border-slate-100 py-6 text-center text-xs text-slate-400">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2">
+    <!-- COMPACT FOOTER -->
+    <footer class="no-print border-t border-slate-100 py-4 text-center text-xs text-slate-400">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-1">
             <span>© 2026 Jothilakshmi M. • Software Engineer Portfolio</span>
             <span>Built with Clean Modern Web Standards</span>
         </div>
