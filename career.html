@@ -33,29 +33,28 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
         .font-poppins { font-family: 'Poppins', sans-serif; }
         
-        /* Organic Blob Container */
-        .blob-bg {
-            border-radius: 42% 58% 65% 35% / 45% 48% 52% 55%;
-            background: linear-gradient(135deg, #f43f5e 0%, #db2777 50%, #9d174d 100%);
-            box-shadow: 0 10px 25px -8px rgba(219, 39, 119, 0.35);
-        }
-        .blob-img-frame {
-            border-radius: 42% 58% 65% 35% / 45% 48% 52% 55%;
+        /* Glowing Circular Orbit Ring (Rani Pink) */
+        .orbit-ring {
+            border: 2px solid rgba(219, 39, 119, 0.35);
+            box-shadow: 0 0 35px rgba(219, 39, 119, 0.18), inset 0 0 35px rgba(219, 39, 119, 0.12);
         }
 
-        /* Floating Tech Badges */
-        @keyframes floatSlow1 {
+        /* Floating Animation */
+        @keyframes subtleFloat {
             0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-6px); }
+            50% { transform: translateY(-7px); }
         }
-        @keyframes floatSlow2 {
+        @keyframes subtleFloatReverse {
             0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(6px); }
+            50% { transform: translateY(7px); }
         }
-        .career-float-1 { animation: floatSlow1 4s ease-in-out infinite; }
-        .career-float-2 { animation: floatSlow2 4.5s ease-in-out infinite 0.7s; }
-        .career-float-3 { animation: floatSlow1 4.8s ease-in-out infinite 1.2s; }
-        .career-float-4 { animation: floatSlow2 4.2s ease-in-out infinite 1.6s; }
+
+        .float-anim-1 { animation: subtleFloat 4s ease-in-out infinite; }
+        .float-anim-2 { animation: subtleFloatReverse 4.5s ease-in-out infinite 0.5s; }
+        .float-anim-3 { animation: subtleFloat 5s ease-in-out infinite 1s; }
+        .float-anim-4 { animation: subtleFloatReverse 4.2s ease-in-out infinite 1.5s; }
+        .float-anim-5 { animation: subtleFloat 4.8s ease-in-out infinite 0.8s; }
+        .float-anim-6 { animation: subtleFloatReverse 5.2s ease-in-out infinite 1.2s; }
 
         /* Print stylesheet */
         @media print {
@@ -154,56 +153,71 @@
                     </div>
                 </div>
 
-                <!-- Hero Right: Seated Profile Photo inside Organic Rani Pink Blob -->
+                <!-- Hero Right: Photo with Circular Orbit & Floating Tech Badges -->
                 <div class="lg:col-span-5 flex justify-center lg:justify-end">
-                    <div class="relative w-56 h-64 sm:w-64 sm:h-72">
-                        <!-- Organic Blob Rani Pink Backdrop -->
-                        <div class="absolute inset-0 blob-bg transform -rotate-1"></div>
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 flex items-center justify-center">
                         
-                        <!-- Image Container with matching organic cutout -->
-                        <div class="absolute inset-2 overflow-hidden blob-img-frame border-3 border-white shadow-inner bg-slate-100">
+                        <!-- Glowing Orbit Ring (Rani Pink) -->
+                        <div class="absolute inset-0 rounded-full orbit-ring bg-gradient-to-br from-pink-500/10 via-transparent to-rose-500/10"></div>
+                        
+                        <!-- Subtle Inner Orbit Ring -->
+                        <div class="absolute inset-6 rounded-full border border-dashed border-pink-400/30 pointer-events-none"></div>
+
+                        <!-- Central Profile Photo Frame -->
+                        <div class="relative w-56 h-56 sm:w-64 sm:h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl ring-4 ring-pink-100 bg-pink-50 z-10">
                             <img src="jothi.jpg?v=2" alt="Jothilakshmi M — Software Developer" class="w-full h-full object-cover object-[center_15%]">
                         </div>
 
-                        <!-- Floating Tech Badges (Modern Orbit Style) -->
-                        <div class="absolute -top-3 -left-3 z-20 career-float-1 no-print">
-                            <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-pink-200 shadow-md">
-                                <i class="fa-brands fa-laravel text-red-500 text-xs"></i>
-                                <span class="text-[11px] font-bold text-slate-800">Laravel</span>
+                        <!-- ================= FLOATING TECH BADGES ================= -->
+                        
+                        <!-- 1. Laravel (Top Left) -->
+                        <div class="absolute top-2 left-2 sm:top-4 sm:left-4 z-20 float-anim-1 no-print">
+                            <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#131926]/95 border border-red-500/40 shadow-xl shadow-red-500/10 backdrop-blur-md">
+                                <i class="fa-brands fa-laravel text-red-500 text-sm"></i>
+                                <span class="text-xs font-bold text-white">Laravel</span>
                             </div>
                         </div>
 
-                        <div class="absolute -top-2 -right-3 z-20 career-float-2 no-print">
-                            <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-amber-200 shadow-md">
-                                <i class="fa-brands fa-java text-amber-600 text-xs"></i>
-                                <span class="text-[11px] font-bold text-slate-800">Java</span>
+                        <!-- 2. Core Java (Top Right) -->
+                        <div class="absolute top-4 right-2 sm:top-6 sm:right-4 z-20 float-anim-2 no-print">
+                            <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#131926]/95 border border-amber-500/40 shadow-xl shadow-amber-500/10 backdrop-blur-md">
+                                <i class="fa-brands fa-java text-amber-500 text-sm"></i>
+                                <span class="text-xs font-bold text-white">Core Java</span>
                             </div>
                         </div>
 
-                        <div class="absolute top-1/2 -right-5 -translate-y-1/2 z-20 career-float-3 no-print">
-                            <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-sky-200 shadow-md">
-                                <i class="fa-solid fa-database text-sky-600 text-[10px]"></i>
-                                <span class="text-[11px] font-bold text-slate-800">MySQL</span>
+                        <!-- 3. MySQL (Mid Left) -->
+                        <div class="absolute top-1/2 -left-4 sm:-left-6 -translate-y-1/2 z-20 float-anim-3 no-print">
+                            <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#131926]/95 border border-sky-500/40 shadow-xl shadow-sky-500/10 backdrop-blur-md">
+                                <i class="fa-solid fa-database text-sky-400 text-xs"></i>
+                                <span class="text-xs font-bold text-white">MySQL</span>
                             </div>
                         </div>
 
-                        <div class="absolute -bottom-3 -right-2 z-20 career-float-4 no-print">
-                            <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-pink-200 shadow-md">
-                                <i class="fa-solid fa-network-wired text-pink-600 text-[10px]"></i>
-                                <span class="text-[11px] font-bold text-slate-800">REST APIs</span>
+                        <!-- 4. PHP 8.x (Mid Right) -->
+                        <div class="absolute top-1/2 -right-4 sm:-right-6 -translate-y-1/2 z-20 float-anim-4 no-print">
+                            <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#131926]/95 border border-indigo-500/40 shadow-xl shadow-indigo-500/10 backdrop-blur-md">
+                                <i class="fa-brands fa-php text-indigo-400 text-base"></i>
+                                <span class="text-xs font-bold text-white">PHP 8.x</span>
                             </div>
                         </div>
 
-                        <!-- Badge Overlay -->
-                        <div class="absolute -bottom-3 -left-3 bg-white/95 backdrop-blur-sm border border-slate-100 rounded-lg px-2.5 py-1.5 shadow-md flex items-center gap-2 z-20">
-                            <div class="w-7 h-7 rounded-md bg-pink-50 text-pink-700 flex items-center justify-center font-bold text-xs">
-                                <i class="fa-solid fa-code"></i>
-                            </div>
-                            <div>
-                                <span class="block text-[11px] font-bold text-slate-900 leading-tight">Backend Specialist</span>
-                                <span class="text-[10px] text-slate-500">Core Java • PHP Laravel</span>
+                        <!-- 5. REST APIs (Bottom Left) -->
+                        <div class="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 z-20 float-anim-5 no-print">
+                            <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#131926]/95 border border-pink-500/40 shadow-xl shadow-pink-500/10 backdrop-blur-md">
+                                <i class="fa-solid fa-network-wired text-pink-400 text-xs"></i>
+                                <span class="text-xs font-bold text-white">REST APIs</span>
                             </div>
                         </div>
+
+                        <!-- 6. JavaScript (Bottom Right) -->
+                        <div class="absolute bottom-2 right-4 sm:bottom-4 sm:right-6 z-20 float-anim-6 no-print">
+                            <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#131926]/95 border border-yellow-500/40 shadow-xl shadow-yellow-500/10 backdrop-blur-md">
+                                <i class="fa-brands fa-js text-yellow-400 text-sm"></i>
+                                <span class="text-xs font-bold text-white">JavaScript</span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
