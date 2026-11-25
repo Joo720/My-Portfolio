@@ -3,416 +3,588 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jothilakshmi M — Freelance Laravel & Backend Developer</title>
+    <title>Jothilakshmi M — Full-Stack Freelance Developer & Laravel Specialist</title>
+    <meta name="description" content="Freelance Software Engineer specializing in custom e-commerce systems, high-performance Laravel backends, and responsive web applications.">
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f17',
+                        darkCard: '#131926',
+                        darkBorder: '#20293d',
+                        accentGreen: '#10b981',
+                        accentAmber: '#f59e0b',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+                        heading: ['Poppins', 'Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
     
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #ede7de; /* Warm editorial greige background from reference */
-            color: #292524;
+            background-color: #0b0f17;
+            color: #94a3b8;
         }
-        .font-serif-title {
-            font-family: 'Cormorant Garamond', Georgia, serif;
+
+        /* Subtle glowing orbit ring */
+        .orbit-ring {
+            border: 2px solid rgba(16, 185, 129, 0.28);
+            box-shadow: 0 0 35px rgba(16, 185, 129, 0.15), inset 0 0 35px rgba(16, 185, 129, 0.12);
         }
-        .magazine-page {
-            background-color: #faf7f2; /* Cream paper */
-            border: 1px solid #d4ccbf;
+
+        /* Floating Animation */
+        @keyframes subtleFloat {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-7px); }
         }
-        .border-editorial {
-            border-color: #d4ccbf;
+        @keyframes subtleFloatReverse {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(7px); }
         }
+
+        .float-anim-1 { animation: subtleFloat 4s ease-in-out infinite; }
+        .float-anim-2 { animation: subtleFloatReverse 4.5s ease-in-out infinite 0.5s; }
+        .float-anim-3 { animation: subtleFloat 5s ease-in-out infinite 1s; }
+        .float-anim-4 { animation: subtleFloatReverse 4.2s ease-in-out infinite 1.5s; }
+        .float-anim-5 { animation: subtleFloat 4.8s ease-in-out infinite 0.8s; }
+        .float-anim-6 { animation: subtleFloatReverse 5.2s ease-in-out infinite 1.2s; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0b0f17; }
+        ::-webkit-scrollbar-thumb { background: #20293d; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #10b981; }
     </style>
 </head>
-<body class="py-8 sm:py-12 px-3 sm:px-6 antialiased selection:bg-stone-800 selection:text-white">
+<body class="selection:bg-emerald-500 selection:text-white antialiased">
 
-    <!-- DESK / WRAPPER CONTAINER -->
-    <div class="max-w-6xl mx-auto space-y-10 sm:space-y-16">
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-[#0b0f17]/90 backdrop-blur-md border-b border-[#20293d]/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#home" class="flex items-center gap-2 group">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 flex items-center justify-center text-slate-950 font-extrabold text-base shadow-lg shadow-emerald-500/20 group-hover:scale-105 transition">
+                    JM
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-sm font-bold text-white tracking-tight group-hover:text-emerald-400 transition font-heading">
+                        Jothilakshmi M
+                    </span>
+                    <span class="text-[10px] text-emerald-400 font-semibold tracking-wider uppercase">
+                        Freelance Developer
+                    </span>
+                </div>
+            </a>
 
-        <!-- TOP MASTHEAD HEADER -->
-        <header class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-[#cfc6b8] pb-4 gap-3 text-xs uppercase tracking-widest text-stone-600">
-            <div class="flex items-center gap-3">
-                <span class="font-bold text-stone-900 tracking-wider">Jothilakshmi M.</span>
-                <span>/</span>
-                <span>Portfolio Edition 2026</span>
-            </div>
-            <nav class="flex items-center gap-6 font-medium text-[11px] text-stone-600">
-                <a href="#about" class="hover:text-stone-950 transition">/01 Profile</a>
-                <a href="#work" class="hover:text-stone-950 transition">/02 Featured Project</a>
-                <a href="#services" class="hover:text-stone-950 transition">/03 Services</a>
-                <a href="#contact" class="hover:text-stone-950 transition text-stone-900 font-bold underline underline-offset-4">/04 Contact</a>
+            <!-- Nav Links (Desktop) -->
+            <nav class="hidden md:flex items-center gap-7 text-xs font-semibold uppercase tracking-wider text-slate-300">
+                <a href="#home" class="text-emerald-400 hover:text-emerald-300 transition">Home</a>
+                <a href="#work" class="hover:text-emerald-400 transition">Featured Work</a>
+                <a href="#services" class="hover:text-emerald-400 transition">Services</a>
+                <a href="#process" class="hover:text-emerald-400 transition">Process</a>
+                <a href="#contact" class="hover:text-emerald-400 transition">Contact</a>
             </nav>
-        </header>
 
-        <!-- ================= SPREAD 1: ABOUT ME & TABLE OF SERVICES ================= -->
-        <section id="about" class="magazine-page shadow-sm rounded-sm">
-            <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x border-editorial">
+            <!-- Action Button -->
+            <div class="flex items-center gap-3">
+                <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold transition shadow-lg shadow-amber-500/20 hover:scale-105">
+                    <span>Hire Me</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (DARK SLEEK WITH FLOATING TECH ORBIT) -->
+    <section id="home" class="relative py-12 sm:py-20 overflow-hidden border-b border-[#20293d]/70">
+        <!-- Background Ambient Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
                 
-                <!-- Left Page: About Me & Background -->
-                <div class="p-8 sm:p-12 space-y-8">
-                    <div class="flex items-baseline justify-between border-b border-editorial pb-3">
-                        <span class="text-[10px] uppercase tracking-widest text-stone-500 font-semibold">Introduction / Profile</span>
-                        <span class="text-[10px] uppercase tracking-widest text-stone-500">Vol. 01</span>
+                <!-- Hero Left: Text & Pitch -->
+                <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Available for Freelance Projects & Custom Systems
                     </div>
 
-                    <div>
-                        <h1 class="text-4xl sm:text-5xl font-normal font-serif-title tracking-tight text-stone-950 leading-none">
-                            About Me
+                    <div class="space-y-1">
+                        <p class="text-xs uppercase tracking-widest text-slate-400 font-bold">— Welcome to My Portfolio</p>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white font-heading leading-tight tracking-tight">
+                            Hello<br>
+                            I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">Jothilakshmi M</span>
                         </h1>
-                        <p class="text-xs uppercase tracking-widest text-stone-500 font-medium mt-2">
-                            Software Engineer & Laravel Developer
-                        </p>
                     </div>
 
-                    <!-- Editorial Profile Bio -->
-                    <div class="text-xs sm:text-sm text-stone-700 leading-relaxed space-y-3 font-normal">
-                        <p>
-                            Hello, I’m <strong>Jothilakshmi</strong>. I am a commercial backend developer with 3+ years of professional experience engineering reliable server-side web systems, custom administrative portals, and robust database architectures.
-                        </p>
-                        <p>
-                            I specialize in building production-ready applications with <strong>PHP, Laravel, and MySQL</strong>, turning business requirements into scalable, maintainable code with high performance.
-                        </p>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl mx-auto lg:mx-0">
+                        Full-stack software developer with 3+ years of expertise crafting custom e-commerce engines, high-speed Laravel backends, and automated workflow applications. I build reliable, production-ready solutions tailored to your business goals.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                        <a href="#work" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-extrabold uppercase tracking-wider transition shadow-lg shadow-amber-500/25 hover:scale-105">
+                            <span>Explore Featured Work</span>
+                            <i class="fa-solid fa-arrow-down text-[11px]"></i>
+                        </a>
+
+                        <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-white border border-slate-700 text-xs font-bold uppercase tracking-wider transition hover:border-emerald-500/50">
+                            <span>Get in Touch</span>
+                            <i class="fa-regular fa-paper-plane text-[11px]"></i>
+                        </a>
                     </div>
 
-                    <!-- Structured Editorial Metadata -->
-                    <div class="grid grid-cols-2 gap-6 pt-4 border-t border-editorial text-xs">
-                        <div>
-                            <span class="text-[10px] uppercase tracking-widest text-stone-500 font-bold block mb-1">Contact Info</span>
-                            <p class="text-stone-800 font-medium">+91 9384139425</p>
-                            <p class="text-stone-800 font-medium">jomurugan2004@gmail.com</p>
-                            <p class="text-stone-500 text-[11px] mt-1">Tamil Nadu, India</p>
+                    <!-- Highlight Badges -->
+                    <div class="pt-6 grid grid-cols-3 gap-3 border-t border-[#20293d]/80 max-w-lg mx-auto lg:mx-0 text-left">
+                        <div class="p-2.5 rounded-lg bg-[#131926] border border-[#20293d]">
+                            <span class="block text-base font-extrabold text-emerald-400 font-heading">3+ Years</span>
+                            <span class="text-[11px] text-slate-400 font-medium">Backend Engineering</span>
                         </div>
-                        <div>
-                            <span class="text-[10px] uppercase tracking-widest text-stone-500 font-bold block mb-1">Core Competencies</span>
-                            <p class="text-stone-800 font-medium">PHP 8.x • Laravel • MySQL</p>
-                            <p class="text-stone-800 font-medium">RESTful APIs • MVC Architecture</p>
-                            <p class="text-stone-500 text-[11px] mt-1">Automated PDF Systems • Git</p>
+                        <div class="p-2.5 rounded-lg bg-[#131926] border border-[#20293d]">
+                            <span class="block text-base font-extrabold text-amber-400 font-heading">Live Production</span>
+                            <span class="text-[11px] text-slate-400 font-medium">Dhaya Crackers</span>
                         </div>
-                    </div>
-
-                    <!-- Availability Badge -->
-                    <div class="pt-2">
-                        <span class="inline-flex items-center gap-2 px-3 py-1 bg-stone-200/60 rounded-full text-[11px] font-semibold text-stone-800">
-                            <span class="w-2 h-2 rounded-full bg-emerald-600"></span> Currently Available for Freelance Contracts
-                        </span>
+                        <div class="p-2.5 rounded-lg bg-[#131926] border border-[#20293d]">
+                            <span class="block text-base font-extrabold text-cyan-400 font-heading">Custom CRUD</span>
+                            <span class="text-[11px] text-slate-400 font-medium">Fast Turnaround</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Right Page: Table of Services & Offerings -->
-                <div class="p-8 sm:p-12 space-y-8 bg-[#fdfbf7]">
-                    <div class="flex items-baseline justify-between border-b border-editorial pb-3">
-                        <span class="text-[10px] uppercase tracking-widest text-stone-500 font-semibold">Directory</span>
-                        <span class="text-[10px] uppercase tracking-widest text-stone-500">/ INDEX</span>
-                    </div>
+                <!-- Hero Right: Photo with Circular Orbit & Floating Tech Badges -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 flex items-center justify-center">
+                        
+                        <!-- Glowing Orbit Ring -->
+                        <div class="absolute inset-0 rounded-full orbit-ring bg-gradient-to-br from-emerald-500/10 via-transparent to-teal-500/10"></div>
+                        
+                        <!-- Subtle Inner Orbit Ring -->
+                        <div class="absolute inset-6 rounded-full border border-dashed border-emerald-500/20 pointer-events-none"></div>
 
-                    <div>
-                        <h2 class="text-3xl sm:text-4xl font-normal font-serif-title tracking-tight text-stone-950">
-                            / Table of Services
-                        </h2>
-                        <p class="text-xs uppercase tracking-widest text-stone-500 font-medium mt-1">
-                            Technical Solutions Provided
-                        </p>
-                    </div>
-
-                    <!-- Editorial Index List -->
-                    <div class="space-y-5 divide-y divide-editorial text-xs sm:text-sm">
-                        <div class="pt-3 flex justify-between items-baseline gap-4 group">
-                            <div>
-                                <span class="font-bold text-stone-900 block text-sm group-hover:text-stone-700 transition">E-Commerce & Online Storefronts</span>
-                                <span class="text-stone-500 text-xs">Catalog management, live cart sync, state delivery logistics</span>
-                            </div>
-                            <span class="font-serif-title text-base font-semibold text-stone-400">01</span>
+                        <!-- Central Profile Photo Frame -->
+                        <div class="relative w-56 h-56 sm:w-64 sm:h-64 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl bg-slate-900 z-10">
+                            <img src="jothi.jpg?v=2" alt="Jothilakshmi M — Freelance Developer" class="w-full h-full object-cover object-[center_15%]">
                         </div>
 
-                        <div class="pt-3 flex justify-between items-baseline gap-4 group">
-                            <div>
-                                <span class="font-bold text-stone-900 block text-sm group-hover:text-stone-700 transition">Custom Administrative Portals & CRUD</span>
-                                <span class="text-stone-500 text-xs">Role-based controls, bulk stock actions, CSV/PDF reports</span>
+                        <!-- ================= FLOATING TECH BADGES ================= -->
+                        
+                        <!-- 1. Laravel (Top Left) -->
+                        <div class="absolute top-2 left-2 sm:top-4 sm:left-4 z-20 float-anim-1">
+                            <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#131926]/95 border border-red-500/40 shadow-xl shadow-red-500/10 backdrop-blur-md">
+                                <i class="fa-brands fa-laravel text-red-500 text-sm"></i>
+                                <span class="text-xs font-bold text-white">Laravel</span>
                             </div>
-                            <span class="font-serif-title text-base font-semibold text-stone-400">02</span>
                         </div>
 
-                        <div class="pt-3 flex justify-between items-baseline gap-4 group">
-                            <div>
-                                <span class="font-bold text-stone-900 block text-sm group-hover:text-stone-700 transition">High-Speed RESTful API Endpoints</span>
-                                <span class="text-stone-500 text-xs">Secure token authentication for Flutter, React, and mobile clients</span>
+                        <!-- 2. PHP (Top Right) -->
+                        <div class="absolute top-4 right-2 sm:top-6 sm:right-4 z-20 float-anim-2">
+                            <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#131926]/95 border border-indigo-500/40 shadow-xl shadow-indigo-500/10 backdrop-blur-md">
+                                <i class="fa-brands fa-php text-indigo-400 text-base"></i>
+                                <span class="text-xs font-bold text-white">PHP 8.x</span>
                             </div>
-                            <span class="font-serif-title text-base font-semibold text-stone-400">03</span>
                         </div>
 
-                        <div class="pt-3 flex justify-between items-baseline gap-4 group">
-                            <div>
-                                <span class="font-bold text-stone-900 block text-sm group-hover:text-stone-700 transition">Automated PDF & Workflow Systems</span>
-                                <span class="text-stone-500 text-xs">High-volume automated invoice & certificate generation pipelines</span>
+                        <!-- 3. MySQL (Mid Left) -->
+                        <div class="absolute top-1/2 -left-4 sm:-left-6 -translate-y-1/2 z-20 float-anim-3">
+                            <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#131926]/95 border border-sky-500/40 shadow-xl shadow-sky-500/10 backdrop-blur-md">
+                                <i class="fa-solid fa-database text-sky-400 text-xs"></i>
+                                <span class="text-xs font-bold text-white">MySQL</span>
                             </div>
-                            <span class="font-serif-title text-base font-semibold text-stone-400">04</span>
                         </div>
 
-                        <div class="pt-3 flex justify-between items-baseline gap-4 group">
-                            <div>
-                                <span class="font-bold text-stone-900 block text-sm group-hover:text-stone-700 transition">Database Tuning & Bug Diagnostics</span>
-                                <span class="text-stone-500 text-xs">MySQL query indexing, latency reduction, and PHP runtime fixes</span>
+                        <!-- 4. Tailwind / CSS (Mid Right) -->
+                        <div class="absolute top-1/2 -right-4 sm:-right-6 -translate-y-1/2 z-20 float-anim-4">
+                            <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#131926]/95 border border-cyan-500/40 shadow-xl shadow-cyan-500/10 backdrop-blur-md">
+                                <i class="fa-solid fa-code text-cyan-400 text-xs"></i>
+                                <span class="text-xs font-bold text-white">Tailwind</span>
                             </div>
-                            <span class="font-serif-title text-base font-semibold text-stone-400">05</span>
                         </div>
-                    </div>
 
-                    <div class="pt-4 border-t border-editorial">
-                        <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-stone-900 hover:text-stone-600 transition tracking-wider uppercase">
-                            <span>Inquire for a Custom Project</span>
-                            <span>&rarr;</span>
-                        </a>
+                        <!-- 5. REST APIs (Bottom Left) -->
+                        <div class="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 z-20 float-anim-5">
+                            <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#131926]/95 border border-emerald-500/40 shadow-xl shadow-emerald-500/10 backdrop-blur-md">
+                                <i class="fa-solid fa-network-wired text-emerald-400 text-xs"></i>
+                                <span class="text-xs font-bold text-white">REST APIs</span>
+                            </div>
+                        </div>
+
+                        <!-- 6. JavaScript (Bottom Right) -->
+                        <div class="absolute bottom-2 right-4 sm:bottom-4 sm:right-6 z-20 float-anim-6">
+                            <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#131926]/95 border border-yellow-500/40 shadow-xl shadow-yellow-500/10 backdrop-blur-md">
+                                <i class="fa-brands fa-js text-yellow-400 text-sm"></i>
+                                <span class="text-xs font-bold text-white">JavaScript</span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
             </div>
-        </section>
+        </div>
+    </section>
 
-
-        <!-- ================= SPREAD 2: FEATURED WORK (DHAYA CRACKERS) ================= -->
-        <section id="work" class="magazine-page shadow-sm rounded-sm">
-            <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x border-editorial">
-                
-                <!-- Left Page: Case Study Overview -->
-                <div class="p-8 sm:p-12 space-y-6">
-                    <div class="flex items-baseline justify-between border-b border-editorial pb-3">
-                        <span class="text-[10px] uppercase tracking-widest text-stone-500 font-semibold">/001 FEATURED PROJECT</span>
-                        <span class="text-[10px] uppercase tracking-widest text-emerald-800 font-bold">● Active Production</span>
+    <!-- FEATURED PROJECT SHOWCASE (DHAYA CRACKERS — SOLE CLIENT SHOWCASE) -->
+    <section id="work" class="py-14 sm:py-20 bg-[#0e131d] border-b border-[#20293d]/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+            
+            <!-- Section Header -->
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-[#20293d] pb-6">
+                <div>
+                    <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-emerald-400">
+                        <i class="fa-solid fa-star text-[10px]"></i>
+                        <span>Featured Freelance Case Study</span>
                     </div>
-
-                    <div>
-                        <h2 class="text-4xl sm:text-5xl font-normal font-serif-title tracking-tight text-stone-950 leading-tight">
-                            Dhaya Crackers
-                        </h2>
-                        <p class="text-xs uppercase tracking-widest text-stone-500 font-medium mt-1">
-                            Production E-Commerce & Logistics Platform
-                        </p>
-                    </div>
-
-                    <!-- Editorial Metadata Box -->
-                    <div class="p-4 bg-stone-100/60 border border-editorial rounded-sm grid grid-cols-2 gap-4 text-xs">
-                        <div>
-                            <span class="text-[10px] uppercase tracking-wider text-stone-500 font-bold block">Live Web Domain</span>
-                            <a href="https://www.dhayacrackers.in/" target="_blank" class="font-semibold text-stone-900 underline underline-offset-2 hover:text-stone-600 transition">
-                                dhayacrackers.in &nearr;
-                            </a>
-                        </div>
-                        <div>
-                            <span class="text-[10px] uppercase tracking-wider text-stone-500 font-bold block">Framework Stack</span>
-                            <span class="text-stone-800 font-medium">Laravel, MySQL, Tailwind</span>
-                        </div>
-                    </div>
-
-                    <div class="text-xs sm:text-sm text-stone-700 leading-relaxed space-y-3">
-                        <p>
-                            <strong>Project Summary:</strong> A complete, bespoke fireworks e-commerce platform built to manage intense festive sales traffic. Engineered with automated stock deduction, custom checkout validation, and high-concurrency order workflows.
-                        </p>
-                        <p>
-                            Unlike generic store templates, Dhaya Crackers utilizes custom backend routing to dynamically enforce state-wise delivery criteria and automatically generates formatted PDF customer invoices upon order confirmation.
-                        </p>
-                    </div>
-
-                    <div class="pt-4 border-t border-editorial">
-                        <a href="https://www.dhayacrackers.in/" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-stone-900 hover:bg-stone-800 text-white text-xs uppercase tracking-widest font-semibold transition">
-                            <span>Open Live Website</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Right Page: Technical Architecture Breakdown -->
-                <div class="p-8 sm:p-12 space-y-6 bg-[#fdfbf7]">
-                    <div class="flex items-baseline justify-between border-b border-editorial pb-3">
-                        <span class="text-[10px] uppercase tracking-widest text-stone-500 font-semibold">Engineering Breakdown</span>
-                        <span class="text-[10px] uppercase tracking-widest text-stone-500">System Architecture</span>
-                    </div>
-
-                    <h3 class="text-2xl sm:text-3xl font-normal font-serif-title text-stone-950">
-                        High-Performance Modules Built
-                    </h3>
-
-                    <div class="space-y-5 text-xs sm:text-sm text-stone-700">
-                        <div class="space-y-1 pb-3 border-b border-editorial">
-                            <span class="font-bold text-stone-900 block text-xs uppercase tracking-wider">1. Storefront & Instant Cart Synchronization</span>
-                            <p class="text-xs text-stone-600 leading-normal">
-                                Real-time item count calculations, dynamic category filters, minimum cart value enforcement, and responsive mobile-first checkout interfaces.
-                            </p>
-                        </div>
-
-                        <div class="space-y-1 pb-3 border-b border-editorial">
-                            <span class="font-bold text-stone-900 block text-xs uppercase tracking-wider">2. State & City Parcel Logistics Engine</span>
-                            <p class="text-xs text-stone-600 leading-normal">
-                                Automated delivery logic matching customer states with regional parcel hub hubs and dynamically computing courier freight costs.
-                            </p>
-                        </div>
-
-                        <div class="space-y-1 pb-3 border-b border-editorial">
-                            <span class="font-bold text-stone-900 block text-xs uppercase tracking-wider">3. Automated PDF Invoices</span>
-                            <p class="text-xs text-stone-600 leading-normal">
-                                Server-side generation and instant download of customer PDF invoices with itemized tax breakdowns and transaction receipts.
-                            </p>
-                        </div>
-
-                        <div class="space-y-1">
-                            <span class="font-bold text-stone-900 block text-xs uppercase tracking-wider">4. Administrative Control Suite</span>
-                            <p class="text-xs text-stone-600 leading-normal">
-                                Dedicated admin panel with bulk product pricing adjustments, inventory stock status toggles, order lifecycle tracking, and dispatch exports.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="p-3 bg-stone-100/70 border border-editorial rounded-sm text-[11px] text-stone-600">
-                        <strong>Technical note:</strong> Built without third-party page-builders. Clean, native Laravel MVC architecture optimized for peak festival loads.
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- ================= SPREAD 3: PROCESS & DETAILED SERVICES ================= -->
-        <section id="services" class="magazine-page shadow-sm rounded-sm">
-            <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x border-editorial">
-                
-                <!-- Left Page: Detailed Services -->
-                <div class="p-8 sm:p-12 space-y-6">
-                    <div class="flex items-baseline justify-between border-b border-editorial pb-3">
-                        <span class="text-[10px] uppercase tracking-widest text-stone-500 font-semibold">Capabilities</span>
-                        <span class="text-[10px] uppercase tracking-widest text-stone-500">Vol. 03</span>
-                    </div>
-
-                    <h2 class="text-3xl sm:text-4xl font-normal font-serif-title tracking-tight text-stone-950">
-                        Tailored Backend Capabilities
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-heading mt-1">
+                        Dhaya Crackers E-Commerce Platform
                     </h2>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-xs font-semibold">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Active In Production
+                    </span>
+                    <a href="https://www.dhayacrackers.in/" target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs transition shadow-lg shadow-emerald-500/20">
+                        <span>Visit Live Site</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
 
-                    <div class="space-y-4 text-xs sm:text-sm text-stone-700">
-                        <div class="p-4 border border-editorial bg-white/60 space-y-1">
-                            <strong class="text-stone-900 block text-sm font-semibold">Administrative Dashboards & Internal CRUD</strong>
-                            <p class="text-xs text-stone-600 leading-relaxed">
-                                Custom role-based management interfaces (Admin, Staff, Manager) with customer data management and CSV/Excel/PDF export capabilities.
+            <!-- Main Project Showcase Card -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-[#131926] border border-[#20293d] rounded-2xl p-6 sm:p-10 shadow-xl">
+                
+                <!-- Left: Project Narrative & Features -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="space-y-2">
+                        <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">Custom Built Web Architecture</span>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-white font-heading">
+                            High-Concurrency E-Commerce & Parcel Logistics Engine
+                        </h3>
+                        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                            Engineered a complete, bespoke fireworks e-commerce platform designed to seamlessly handle seasonal sales spikes. From dynamic instant-cart calculations to state-specific transport parcel validations, every workflow was tailor-coded for commercial performance.
+                        </p>
+                    </div>
+
+                    <!-- Highlighted Technical Capabilities -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                        <div class="p-3 rounded-xl bg-[#0b0f17] border border-[#20293d]">
+                            <div class="flex items-center gap-2 text-white font-bold text-xs mb-1">
+                                <i class="fa-solid fa-bolt text-amber-400"></i>
+                                <span>Real-Time Cart & Pricing</span>
+                            </div>
+                            <p class="text-[11px] text-slate-400">
+                                Instant client-side cart calculation, minimum purchase rules, and automated festival discounts.
                             </p>
                         </div>
 
-                        <div class="p-4 border border-editorial bg-white/60 space-y-1">
-                            <strong class="text-stone-900 block text-sm font-semibold">RESTful API Architecture</strong>
-                            <p class="text-xs text-stone-600 leading-relaxed">
-                                Clean, secure REST endpoints designed specifically for Flutter, React Native, or frontend web frameworks with Sanctum/JWT token authentication.
+                        <div class="p-3 rounded-xl bg-[#0b0f17] border border-[#20293d]">
+                            <div class="flex items-center gap-2 text-white font-bold text-xs mb-1">
+                                <i class="fa-solid fa-truck-fast text-emerald-400"></i>
+                                <span>State Delivery Logistics</span>
+                            </div>
+                            <p class="text-[11px] text-slate-400">
+                                Dynamic transport point selection across Tamil Nadu and Pan-India parcel hubs.
                             </p>
                         </div>
 
-                        <div class="p-4 border border-editorial bg-white/60 space-y-1">
-                            <strong class="text-stone-900 block text-sm font-semibold">Automated PDF & Document Pipelines</strong>
-                            <p class="text-xs text-stone-600 leading-relaxed">
-                                High-volume automated generation of formatted PDF invoices, reports, and certificates with background queue processing.
+                        <div class="p-3 rounded-xl bg-[#0b0f17] border border-[#20293d]">
+                            <div class="flex items-center gap-2 text-white font-bold text-xs mb-1">
+                                <i class="fa-solid fa-file-invoice text-cyan-400"></i>
+                                <span>Automated PDF Invoices</span>
+                            </div>
+                            <p class="text-[11px] text-slate-400">
+                                Instant automated order confirmation receipts generated and emailed directly to clients.
                             </p>
                         </div>
+
+                        <div class="p-3 rounded-xl bg-[#0b0f17] border border-[#20293d]">
+                            <div class="flex items-center gap-2 text-white font-bold text-xs mb-1">
+                                <i class="fa-solid fa-shield-halved text-indigo-400"></i>
+                                <span>Custom Admin Dashboard</span>
+                            </div>
+                            <p class="text-[11px] text-slate-400">
+                                Secure inventory controls, real-time order status tracking, and stock balance alerts.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tech Stack Badges -->
+                    <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-[#20293d]">
+                        <span class="text-xs text-slate-400 font-semibold mr-1">Stack:</span>
+                        <span class="px-2.5 py-1 rounded-md bg-[#0b0f17] text-slate-300 text-xs font-medium border border-[#20293d]">Laravel 10</span>
+                        <span class="px-2.5 py-1 rounded-md bg-[#0b0f17] text-slate-300 text-xs font-medium border border-[#20293d]">MySQL</span>
+                        <span class="px-2.5 py-1 rounded-md bg-[#0b0f17] text-slate-300 text-xs font-medium border border-[#20293d]">Tailwind CSS</span>
+                        <span class="px-2.5 py-1 rounded-md bg-[#0b0f17] text-slate-300 text-xs font-medium border border-[#20293d]">JavaScript</span>
+                        <span class="px-2.5 py-1 rounded-md bg-[#0b0f17] text-slate-300 text-xs font-medium border border-[#20293d]">DomPDF</span>
                     </div>
                 </div>
 
-                <!-- Right Page: 3-Step Work Process -->
-                <div class="p-8 sm:p-12 space-y-6 bg-[#fdfbf7]">
-                    <div class="flex items-baseline justify-between border-b border-editorial pb-3">
-                        <span class="text-[10px] uppercase tracking-widest text-stone-500 font-semibold">Methodology</span>
-                        <span class="text-[10px] uppercase tracking-widest text-stone-500">How I Work</span>
-                    </div>
+                <!-- Right: Interactive Platform Card & Metrics -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="p-6 rounded-2xl bg-[#0b0f17] border border-[#20293d] space-y-5 text-center">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-slate-950 text-2xl mx-auto shadow-lg shadow-amber-500/20">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
 
-                    <h3 class="text-3xl sm:text-4xl font-normal font-serif-title tracking-tight text-stone-950">
-                        Disciplined Delivery Process
-                    </h3>
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Production URL</span>
+                            <h4 class="text-xl font-bold text-white mt-1">www.dhayacrackers.in</h4>
+                            <p class="text-xs text-slate-400 mt-1">Live seasonal storefront serving festive customers statewide.</p>
+                        </div>
 
-                    <div class="space-y-6 text-xs sm:text-sm">
-                        <div class="space-y-1">
-                            <div class="flex items-center gap-2">
-                                <span class="font-serif-title text-base font-bold text-stone-900">01.</span>
-                                <span class="font-bold text-stone-900 uppercase tracking-wide text-xs">Requirements & Scope Alignment</span>
+                        <div class="p-4 rounded-xl bg-[#131926] border border-[#20293d] space-y-2 text-left">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="text-slate-400">Architecture</span>
+                                <span class="text-emerald-400 font-semibold">Custom MVC Pattern</span>
                             </div>
-                            <p class="text-xs text-stone-600 leading-relaxed pl-6">
-                                We define the exact database schemas, business rules, and deliverables upfront. Transparent communication with no guesswork.
-                            </p>
-                        </div>
-
-                        <div class="space-y-1">
-                            <div class="flex items-center gap-2">
-                                <span class="font-serif-title text-base font-bold text-stone-900">02.</span>
-                                <span class="font-bold text-stone-900 uppercase tracking-wide text-xs">Clean Architecture & Testing</span>
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="text-slate-400">Database Schema</span>
+                                <span class="text-white font-semibold">Indexed Relational MySQL</span>
                             </div>
-                            <p class="text-xs text-stone-600 leading-relaxed pl-6">
-                                Development using clean OOP standards, modular service layers, and validation on a staging environment.
-                            </p>
-                        </div>
-
-                        <div class="space-y-1">
-                            <div class="flex items-center gap-2">
-                                <span class="font-serif-title text-base font-bold text-stone-900">03.</span>
-                                <span class="font-bold text-stone-900 uppercase tracking-wide text-xs">Deployment & Handoff</span>
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="text-slate-400">Response Latency</span>
+                                <span class="text-emerald-400 font-semibold">Sub-second API Execution</span>
                             </div>
-                            <p class="text-xs text-stone-600 leading-relaxed pl-6">
-                                Production deployment to your server with complete code documentation and post-delivery assistance.
-                            </p>
                         </div>
-                    </div>
 
-                    <div class="pt-4 border-t border-editorial">
-                        <div class="p-4 bg-stone-100/70 border border-editorial text-xs text-stone-700">
-                            <strong>Working Principle:</strong> High standards of clean code, fast response times, and dependable software execution.
-                        </div>
+                        <a href="https://www.dhayacrackers.in/" target="_blank" class="w-full py-3 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs uppercase tracking-wider transition inline-flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20">
+                            <span>Launch Live Storefront</span>
+                            <i class="fa-solid fa-external-link text-[11px]"></i>
+                        </a>
                     </div>
                 </div>
 
             </div>
-        </section>
+        </div>
+    </section>
 
-
-        <!-- ================= SPREAD 4: CONTACT & INQUIRIES ================= -->
-        <section id="contact" class="magazine-page shadow-sm rounded-sm">
-            <div class="p-8 sm:p-12 text-center max-w-2xl mx-auto space-y-6">
-                <span class="text-[10px] uppercase tracking-widest text-stone-500 font-semibold block">/ INQUIRIES & COLLABORATION</span>
-
-                <h2 class="text-4xl sm:text-5xl font-normal font-serif-title tracking-tight text-stone-950">
-                    Let’s Discuss Your Project
+    <!-- FREELANCE SERVICES OFFERED -->
+    <section id="services" class="py-14 sm:py-20 border-b border-[#20293d]/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+            
+            <div class="text-center max-w-2xl mx-auto space-y-2">
+                <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">What I Do</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-heading">
+                    Custom Freelance Development Services
                 </h2>
-
-                <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
-                    Have a web application, admin portal, or custom backend system you need built? Send me a message and I’ll get back to you promptly.
+                <p class="text-slate-400 text-xs sm:text-sm">
+                    Reliable backend engineering, custom portal development, and full-stack solutions tailored for modern business needs.
                 </p>
-
-                <!-- Editorial Action Cards -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 text-left">
-                    <a href="https://wa.me/919384139425?text=Hi%20Jothilakshmi,%20I%20have%20a%20project%20and%20would%20like%20to%20discuss." target="_blank" class="p-4 border border-editorial bg-white hover:bg-stone-50 transition block">
-                        <span class="text-[10px] uppercase tracking-widest text-stone-400 font-bold block mb-1">Instant Messaging</span>
-                        <div class="flex items-center gap-2 font-bold text-stone-900 text-sm">
-                            <i class="fa-brands fa-whatsapp text-emerald-600"></i>
-                            <span>+91 9384139425</span>
-                        </div>
-                        <span class="text-[11px] text-stone-500 mt-1 block">Click to open WhatsApp</span>
-                    </a>
-
-                    <a href="mailto:jomurugan2004@gmail.com" class="p-4 border border-editorial bg-white hover:bg-stone-50 transition block">
-                        <span class="text-[10px] uppercase tracking-widest text-stone-400 font-bold block mb-1">Direct Email</span>
-                        <div class="flex items-center gap-2 font-bold text-stone-900 text-sm">
-                            <i class="fa-regular fa-envelope text-stone-600"></i>
-                            <span class="truncate">jomurugan2004@gmail.com</span>
-                        </div>
-                        <span class="text-[11px] text-stone-500 mt-1 block">Click to send email</span>
-                    </a>
-                </div>
             </div>
-        </section>
 
-        <!-- FOOTER -->
-        <footer class="border-t border-[#cfc6b8] pt-6 pb-12 text-center text-xs text-stone-500 flex flex-col sm:flex-row items-center justify-between gap-2">
-            <span>© 2026 Jothilakshmi M. • Editorial Lookbook Portfolio</span>
-            <span>Laravel & Backend Developer • Tamil Nadu, India</span>
-        </footer>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                
+                <!-- Service 1 -->
+                <div class="p-6 rounded-2xl bg-[#131926] border border-[#20293d] hover:border-emerald-500/50 transition group space-y-3">
+                    <div class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg group-hover:scale-110 transition border border-emerald-500/30">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition font-heading">
+                        Custom E-Commerce Storefronts
+                    </h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        End-to-end shopping carts, dynamic catalog filters, custom delivery logistics engines, and automated invoice dispatches.
+                    </p>
+                </div>
 
-    </div>
+                <!-- Service 2 -->
+                <div class="p-6 rounded-2xl bg-[#131926] border border-[#20293d] hover:border-amber-500/50 transition group space-y-3">
+                    <div class="w-11 h-11 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-lg group-hover:scale-110 transition border border-amber-500/30">
+                        <i class="fa-solid fa-table-columns"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white group-hover:text-amber-400 transition font-heading">
+                        Admin Dashboards & CRUD Panels
+                    </h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Role-based access controls (RBAC), multi-level user permissions, bulk stock updates, and live analytics dashboards.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-6 rounded-2xl bg-[#131926] border border-[#20293d] hover:border-cyan-500/50 transition group space-y-3">
+                    <div class="w-11 h-11 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg group-hover:scale-110 transition border border-cyan-500/30">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white group-hover:text-cyan-400 transition font-heading">
+                        High-Speed RESTful APIs
+                    </h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Token-authenticated REST APIs for mobile applications (Flutter/React Native) with strict JSON schemas and fast response times.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-6 rounded-2xl bg-[#131926] border border-[#20293d] hover:border-indigo-500/50 transition group space-y-3">
+                    <div class="w-11 h-11 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg group-hover:scale-110 transition border border-indigo-500/30">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white group-hover:text-indigo-400 transition font-heading">
+                        Automated PDF & Report Systems
+                    </h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        High-volume automated invoice builders, printable certificates, packing slips, and scheduled financial statement exports.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="p-6 rounded-2xl bg-[#131926] border border-[#20293d] hover:border-rose-500/50 transition group space-y-3">
+                    <div class="w-11 h-11 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center text-lg group-hover:scale-110 transition border border-rose-500/30">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white group-hover:text-rose-400 transition font-heading">
+                        Database Optimization & MySQL
+                    </h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Normalized relational schema design, query profiling, indexing slow queries, and database migration safety.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="p-6 rounded-2xl bg-[#131926] border border-[#20293d] hover:border-emerald-500/50 transition group space-y-3">
+                    <div class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg group-hover:scale-110 transition border border-emerald-500/30">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white group-hover:text-emerald-400 transition font-heading">
+                        Bug Fixing & Server Deployment
+                    </h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Troubleshooting broken PHP/Laravel code, cPanel/VPS setups, SSL configuration, and zero-downtime application maintenance.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DEVELOPMENT PROCESS (CLEAN & STEP-BY-STEP) -->
+    <section id="process" class="py-14 sm:py-20 bg-[#0e131d] border-b border-[#20293d]/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+            
+            <div class="text-center max-w-2xl mx-auto space-y-2">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-400">How I Work</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-heading">
+                    Clear, Transparent Process
+                </h2>
+                <p class="text-slate-400 text-xs sm:text-sm">
+                    A collaborative development lifecycle ensuring high code quality, steady communication, and on-time delivery.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Step 1 -->
+                <div class="p-6 rounded-2xl bg-[#131926] border border-[#20293d] space-y-4 relative">
+                    <span class="text-3xl font-extrabold text-slate-700 font-heading">01</span>
+                    <h3 class="text-lg font-bold text-white font-heading">Discovery & Scope Planning</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        We review your exact functional needs, database structure, user roles, and business workflows to define a concrete roadmap and milestone plan.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="p-6 rounded-2xl bg-[#131926] border border-[#20293d] space-y-4 relative">
+                    <span class="text-3xl font-extrabold text-emerald-500/60 font-heading">02</span>
+                    <h3 class="text-lg font-bold text-white font-heading">Development & Staging Demos</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Clean, modular code execution with regular interactive updates. You test features on a live staging environment as they are built.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="p-6 rounded-2xl bg-[#131926] border border-[#20293d] space-y-4 relative">
+                    <span class="text-3xl font-extrabold text-amber-500/60 font-heading">03</span>
+                    <h3 class="text-lg font-bold text-white font-heading">Testing, Security & Launch</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Rigorous edge-case testing, SQL injection and CSRF protection, server deployment, and smooth production hand-off.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / HIRE ME SECTION -->
+    <section id="contact" class="py-14 sm:py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+            
+            <div class="text-center max-w-xl mx-auto space-y-2">
+                <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Get In Touch</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-heading">
+                    Let's Build Your Next Project
+                </h2>
+                <p class="text-slate-400 text-xs sm:text-sm">
+                    Have a web platform, e-commerce store, or custom backend to build? Reach out directly to discuss your requirements.
+                </p>
+            </div>
+
+            <!-- Contact Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                
+                <!-- Email -->
+                <a href="mailto:jomurugan2004@gmail.com" class="p-5 rounded-2xl bg-[#131926] border border-[#20293d] hover:border-emerald-500/50 hover:scale-[1.02] transition block text-center space-y-2 group">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mx-auto text-base border border-emerald-500/30 group-hover:scale-110 transition">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <span class="block text-xs font-bold text-white">Direct Email</span>
+                    <span class="text-xs text-slate-400 break-all group-hover:text-emerald-400 transition">jomurugan2004@gmail.com</span>
+                </a>
+
+                <!-- Phone / Call -->
+                <a href="tel:+919384139425" class="p-5 rounded-2xl bg-[#131926] border border-[#20293d] hover:border-amber-500/50 hover:scale-[1.02] transition block text-center space-y-2 group">
+                    <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mx-auto text-base border border-amber-500/30 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <span class="block text-xs font-bold text-white">Phone / WhatsApp</span>
+                    <span class="text-xs text-slate-400 group-hover:text-amber-400 transition">+91 9384139425</span>
+                </a>
+
+                <!-- Location -->
+                <div class="p-5 rounded-2xl bg-[#131926] border border-[#20293d] text-center space-y-2">
+                    <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mx-auto text-base border border-cyan-500/30">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <span class="block text-xs font-bold text-white">Location</span>
+                    <span class="text-xs text-slate-400">Tamil Nadu, India</span>
+                </div>
+
+            </div>
+
+            <!-- Fast Response Note -->
+            <div class="p-4 rounded-xl bg-[#131926]/60 border border-[#20293d] text-center text-xs text-slate-400">
+                <i class="fa-solid fa-clock text-emerald-400 mr-1.5"></i>
+                <span>Fast response to all client inquiries. Ready to start immediately on new milestones.</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-[#070a10] border-t border-[#20293d]/80 text-xs text-slate-500 text-center">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <div class="w-6 h-6 rounded-md bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs font-bold">JM</div>
+                <span class="text-slate-400 font-semibold">Jothilakshmi M. — Full-Stack Freelance Developer</span>
+            </div>
+            <p>&copy; 2026 Jothilakshmi M. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

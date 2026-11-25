@@ -43,6 +43,20 @@
             border-radius: 42% 58% 65% 35% / 45% 48% 52% 55%;
         }
 
+        /* Floating Tech Badges */
+        @keyframes floatSlow1 {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
+        @keyframes floatSlow2 {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(6px); }
+        }
+        .career-float-1 { animation: floatSlow1 4s ease-in-out infinite; }
+        .career-float-2 { animation: floatSlow2 4.5s ease-in-out infinite 0.7s; }
+        .career-float-3 { animation: floatSlow1 4.8s ease-in-out infinite 1.2s; }
+        .career-float-4 { animation: floatSlow2 4.2s ease-in-out infinite 1.6s; }
+
         /* Print stylesheet */
         @media print {
             .no-print { display: none !important; }
@@ -151,8 +165,37 @@
                             <img src="jothi.jpg?v=2" alt="Jothilakshmi M — Software Developer" class="w-full h-full object-cover object-[center_15%]">
                         </div>
 
+                        <!-- Floating Tech Badges (Modern Orbit Style) -->
+                        <div class="absolute -top-3 -left-3 z-20 career-float-1 no-print">
+                            <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-pink-200 shadow-md">
+                                <i class="fa-brands fa-laravel text-red-500 text-xs"></i>
+                                <span class="text-[11px] font-bold text-slate-800">Laravel</span>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-2 -right-3 z-20 career-float-2 no-print">
+                            <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-amber-200 shadow-md">
+                                <i class="fa-brands fa-java text-amber-600 text-xs"></i>
+                                <span class="text-[11px] font-bold text-slate-800">Java</span>
+                            </div>
+                        </div>
+
+                        <div class="absolute top-1/2 -right-5 -translate-y-1/2 z-20 career-float-3 no-print">
+                            <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-sky-200 shadow-md">
+                                <i class="fa-solid fa-database text-sky-600 text-[10px]"></i>
+                                <span class="text-[11px] font-bold text-slate-800">MySQL</span>
+                            </div>
+                        </div>
+
+                        <div class="absolute -bottom-3 -right-2 z-20 career-float-4 no-print">
+                            <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white border border-pink-200 shadow-md">
+                                <i class="fa-solid fa-network-wired text-pink-600 text-[10px]"></i>
+                                <span class="text-[11px] font-bold text-slate-800">REST APIs</span>
+                            </div>
+                        </div>
+
                         <!-- Badge Overlay -->
-                        <div class="absolute -bottom-1 -left-1 bg-white/95 backdrop-blur-sm border border-slate-100 rounded-lg px-2.5 py-1.5 shadow-md flex items-center gap-2">
+                        <div class="absolute -bottom-3 -left-3 bg-white/95 backdrop-blur-sm border border-slate-100 rounded-lg px-2.5 py-1.5 shadow-md flex items-center gap-2 z-20">
                             <div class="w-7 h-7 rounded-md bg-pink-50 text-pink-700 flex items-center justify-center font-bold text-xs">
                                 <i class="fa-solid fa-code"></i>
                             </div>
